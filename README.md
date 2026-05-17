@@ -1,5 +1,5 @@
 <div>
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=header&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&descSize=20&descAlign=50&descAlignY=50&theme=dark"   />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=header&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&descSize=20&descAlign=50&descAlignY=50&theme=dark" />
 </div>
 
 ###
@@ -23,50 +23,48 @@
 
 ###
 
-<h3 align="left">🛠️ Tech Stack & Tools:</h3>
 <div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="35" alt="python logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" height="35" alt="django logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height="35" alt="flask logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" height="35" alt="fastapi logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="35" alt="javascript logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="35" alt="react logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" height="35" alt="jquery logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="35" alt="bootstrap logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="35" alt="html5 logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="35" alt="css3 logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="35" alt="postgresql logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="35" alt="mysql logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" height="35" alt="sqlalchemy logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="35" alt="linux logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="35" alt="bash logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="35" alt="git logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="35" alt="github logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="35" alt="docker logo" />
-  <img width="5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="35" alt="kubernetes logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="30" alt="postgresql logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height="30" alt="flask logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" height="30" alt="django logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" height="30" alt="fastapi logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="react logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" height="30" alt="jquery logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="30" alt="bootstrap logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="30" alt="mysql logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" height="30" alt="sqlalchemy logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30" alt="linux logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="30" alt="bash logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="30" alt="git logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="30" alt="github logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="30" alt="docker logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="30" alt="kubernetes logo" />
 </div>
 
 ###
 
-<h3 align="left">🌐 Connect with me:</h3>
 <div align="left">
   <a href="https://www.linkedin.com/in/omarwaelkishk" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&style=for-the-badge" height="35" alt="linkedin logo" />
@@ -81,20 +79,34 @@
 
 ###
 
-<h3 align="left">⚙️ Activity & Vibing:</h3>
 <div align="center">
-  <img height="160" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmhvZmFyZGQybm9iY2MwZGczcWJ1dm84aWZmeWR6MWxiaDh0N2tyNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EaEWuES5SDSpcnOlRt/200.webp" />
-  <img height="160" src="https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3c2ZqeXBiMHFpYW1yY3Q4djdpMjRkZHV5bTh1eW9meDFpMWZ0ZTgzdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/S9d8XB557e8phGLBVS/giphy.webp" />
-  <img height="160" src="https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bDNpeTFiZHdzOWxpNjdjYXlsemN2Mjl3cDVkZTJkMWs5NXl0dnJzMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/0eIgxkeDtLSbWLkOAc/giphy.webp" />
-</div>
-<div align="center">
-  <img height="140" src="https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3b٣hhOXQ3MmNnM2F5bDJnZjdsZGMweGpheXhnMnBsMzljNzNqMDBweSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/UHprOB2h0CBWJ7gz9i/giphy.webp" />
-  <img height="140" src="https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bG51OW16eGw5OXE4cjR2dHFvZWVzajR5ZHAyYWw3MzdhbTEwbG82cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/6FWpozKBgrQD4MZwDC/giphy.webp" />
-  <img height="140" src="https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aDNvajdtOXozeXc4b3ptcTd6eWJkMXhoeHp1Nzd5YXM0MW1kamJiayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ML15sUZFNyMy0Yv55m/giphy.webp" />
+  <table border="0" cellpadding="5" cellspacing="5" align="center">
+    <tr>
+      <td align="center" valign="middle"><img height="180" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmhvZmFyZGQybm9iY2MwZGczcWJ1dm84aWZmeWR6MWxiaDh0N2tyNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EaEWuES5SDSpcnOlRt/200.webp" /></td>
+      <td align="center" valign="middle"><img height="180" src="https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3c2ZqeXBiMHFpYW1yY3Q4djdpMjRkZHV5bTh1eW9meDFpMWZ0ZTgzdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/S9d8XB557e8phGLBVS/giphy.webp" /></td>
+      <td align="center" valign="middle"><img height="180" src="https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bDNpeTFiZHdzOWxpNjdjYXlsemN2Mjl3cDVkZTJkMWs5NXl0dnJzMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/0eIgxkeDtLSbWLkOAc/giphy.webp" /></td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle"><img height="180" src="https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3b3hhOXQ3MmNnM2F5bDJnZjdsZGMweGpheXhnMnBsMzljNzNqMDBweSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/UHprOB2h0CBWJ7gz9i/giphy.webp" /></td>
+      <td align="center" valign="middle"><img height="180" src="https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bG51OW16eGw5OXE4cjR2dHFvZWVzajR5ZHAyYWw3MzdhbTEwbG82cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/6FWpozKBgrQD4MZwDC/giphy.webp" /></td>
+      <td align="center" valign="middle"><img height="180" src="https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aDNvajdtOXozeXc4b3ptcTd6eWJkMXhoeHp1Nzd5YXM0MW1kamJiayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ML15sUZFNyMy0Yv55m/giphy.webp" /></td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle"><img height="180" src="https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZXJyN3dnb28zZWtneDFsb3FhbnFkaGdwN2U3bjZzMnJnN3EwZ2JvbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WUTywPPYZpdDChyBaZ/200.webp" /></td>
+      <td align="center" valign="middle"><img height="180" src="https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZXJyN3dnb28zZWtneDFsb3FhbnFkaGdwN2U3bjZzMnJnN3EwZ2JvbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/pbIavlMZE7TkcVriMM/giphy.webp" /></td>
+      <td align="center" valign="middle"><img height="180" src="https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3c2ZqeXBiMHFpYW1yY3Q4djdpMjRkZHV5bTh1eW9meDFpMWZ0ZTgzdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/DX1cytoIQvnmgqBlQ3/giphy.webp" /></td>
+    </tr>
+  </table>
+  <table border="0" cellpadding="5" cellspacing="5" align="center">
+    <tr>
+      <td align="center" valign="middle"><img height="180" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXN5ZDM0NWJsNGc2NHl1endpY3J1dmh5bDhxaHBxbzhldmF2bHdieSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/66M6ZwJkTLYikvhrqZ/giphy.webp" /></td>
+      <td align="center" valign="middle"><img height="180" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXN5ZDM0NWJsNGc2NHl1endpY3J1dmh5bDhxaHBxbzhldmF2bHdieSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/GghGKaZ8JeHJx0apQC/giphy.webp" /></td>
+    </tr>
+  </table>
 </div>
 
 ###
 
 <div>
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&animation=scaleIn&descSize=20&descAlign=50&descAlignY=50&theme=dark"   />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&animation=scaleIn&descSize=20&descAlign=50&descAlignY=50&theme=dark" />
 </div>

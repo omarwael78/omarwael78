@@ -8,7 +8,7 @@
 
 ###
 
-<h2 align="left">🐧 ~/ENG-Omar-Wael $ cat intro.md<br><br>* User: Omar Wael  <br>* Type: Full Stack Developer using Python  <br>* Status: Crafting clean backend logic and building scalable web apps.  <br>* Toolbox: Python, Django, Flask, FastAPI, JavaScript, React, jQuery,Bootstrap, HTML, CSS, PostgreSQL, MySQL, Linux, Bash, Git, Docker, Kubernetes.</h2>
+<h1 align="left">🐧 ~/ENG-Omar-Wael $ cat intro.md<br><br>* User: Omar Wael  <br>* Type: Full Stack Developer using Python  <br>* Status: Crafting clean backend logic and building scalable web apps.  <br>* Toolbox: Python, Django, Flask, FastAPI, JavaScript, React, jQuery,Bootstrap, HTML, CSS, PostgreSQL, MySQL, Linux, Bash, Git, Docker, Kubernetes.</h1>
 
 ###
 
@@ -91,15 +91,5 @@
 ###
 
 <img align="right" height="200" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmhvZmFyZGQybm9iY2MwZGczcWJ1dm84aWZmeWR6MWxiaDh0N2tyNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/axnFGXT6MzvgY/200.webp"  />
-
-###
-
-<br clear="both">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/omarwael78/omarwael78/pacman-output/galaga-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/omarwael78/omarwael78/pacman-output/galaga-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/omarwael78/omarwael78/pacman-output/galaga-contribution-graph.svg">
-</picture>
 
 ###

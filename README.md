@@ -98,16 +98,10 @@
 
 ###
 
-<img align="right" height="200" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmhvZmFyZGQybm9iY2MwZGczcWJ1dm84aWZmeWR6MWxiaDh0N2tyNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/axnFGXT6MzvgY/200.webp"  />
+<img align="right" height="200" src="https://media0.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZXJyN3dnb28zZWtneDFsb3FhbnFkaGdwN2U3bjZzMnJnN3EwZ2JvbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WUTywPPYZpdDChyBaZ/200.webp"  />
 
 ###
 
-<br clear="both">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/omarwael78/omarwael78/pacman-output/breakout-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/omarwael78/omarwael78/pacman-output/breakout-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/omarwael78/omarwael78/pacman-output/breakout-contribution-graph.svg">
-</picture>
+<img align="right" height="200" src="https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZXJyN3dnb28zZWtneDFsb3FhbnFkaGdwN2U3bjZzMnJnN3EwZ2JvbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/pbIavlMZE7TkcVriMM/giphy.webp"  />
 
 ###

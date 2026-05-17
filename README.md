@@ -78,6 +78,14 @@
 
 ###
 
+<img align="right" height="150" src="https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3c2ZqeXBiMHFpYW1yY3Q4djdpMjRkZHV5bTh1eW9meDFpMWZ0ZTgzdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/S9d8XB557e8phGLBVS/giphy.webp"  />
+
+###
+
+<img align="right" height="150" src="https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bDNpeTFiZHdzOWxpNjdjYXlsemN2Mjl3cDVkZTJkMWs5NXl0dnJzMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/0eIgxkeDtLSbWLkOAc/giphy.webp"  />
+
+###
+
 <img align="right" height="180" src="https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3b3hhOXQ3MmNnM2F5bDJnZjdsZGMweGpheXhnMnBsMzljNzNqMDBweSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/UHprOB2h0CBWJ7gz9i/giphy.webp"  />
 
 ###
@@ -91,5 +99,15 @@
 ###
 
 <img align="right" height="200" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmhvZmFyZGQybm9iY2MwZGczcWJ1dm84aWZmeWR6MWxiaDh0N2tyNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/axnFGXT6MzvgY/200.webp"  />
+
+###
+
+<br clear="both">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/omarwael78/omarwael78/pacman-output/breakout-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/omarwael78/omarwael78/pacman-output/breakout-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/omarwael78/omarwael78/pacman-output/breakout-contribution-graph.svg">
+</picture>
 
 ###

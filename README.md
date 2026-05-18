@@ -1,5 +1,157 @@
 <div>
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=header&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&descSize=20&descAlign=50&descAlignY=50&theme=dark" />
+  <!-- SVG Banner Dynamic Cyberpunk Style -->
+  <svg width="100%" height="400" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      </linearGradient>
+      
+      <linearGradient id="glowGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#00ff88;stop-opacity:0.3" />
+        <stop offset="50%" style="stop-color:#00ff88;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#00ff88;stop-opacity:0.3" />
+      </linearGradient>
+      
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+        <feMerge>
+          <feMergeNode in="coloredBlur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+      
+      <style>
+        .title {
+          font-family: 'Courier New', monospace;
+          font-size: 44px;
+          font-weight: bold;
+          fill: #ffffff;
+          letter-spacing: 3px;
+        }
+        
+        .subtitle {
+          font-family: 'Courier New', monospace;
+          font-size: 18px;
+          fill: #00ff88;
+        }
+        
+        .terminal-text {
+          font-family: 'Courier New', monospace;
+          font-size: 14px;
+          fill: #00ff88;
+        }
+        
+        .output-text {
+          font-family: 'Courier New', monospace;
+          font-size: 14px;
+          fill: #ffffff;
+        }
+        
+        .blink {
+          animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+          0%, 50% { opacity: 1; }
+          51%, 100% { opacity: 0; }
+        }
+        
+        .glitch-shadow {
+          animation: glitch 3s infinite;
+        }
+        
+        @keyframes glitch {
+          0%, 100% { opacity: 0; }
+          2%, 8% { opacity: 0.8; transform: translate(-2px, 0); }
+          4%, 6% { opacity: 0.8; transform: translate(2px, 0); }
+        }
+        
+        .line {
+          stroke-dasharray: 400;
+          stroke-dashoffset: 400;
+          animation: draw 2s ease-in-out forwards;
+        }
+        
+        @keyframes draw { to { stroke-dashoffset: 0; } }
+        
+        .fade-in {
+          opacity: 0;
+          animation: fadeIn 1s ease-in forwards;
+        }
+        
+        @keyframes fadeIn { to { opacity: 1; } }
+      </style>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="800" height="400" fill="url(#bg)" rx="8"/>
+    
+    <!-- Decorative lines -->
+    <line class="line" x1="50" y1="100" x2="750" y2="100" stroke="#00ff88" stroke-width="2" opacity="0.3"/>
+    <line class="line" x1="50" y1="180" x2="750" y2="180" stroke="#ff0088" stroke-width="1" opacity="0.3" style="animation-delay: 0.3s"/>
+    <line class="line" x1="50" y1="340" x2="750" y2="340" stroke="#00ff88" stroke-width="1" opacity="0.3" style="animation-delay: 0.6s"/>
+    
+    <!-- Glitch effect shadow -->
+    <text class="title glitch-shadow" x="400" y="80" text-anchor="middle" fill="#ff0088" opacity="0.5">OMAR WAEL</text>
+    
+    <!-- Main title -->
+    <text class="title" x="400" y="80" text-anchor="middle" filter="url(#glow)">OMAR WAEL</text>
+    
+    <!-- Subtitle -->
+    <text class="subtitle fade-in" x="400" y="110" text-anchor="middle" style="animation-delay: 0.5s">Full-Stack Developer • DevOps Enthusiast • Powered by Coffee &amp; Linux</text>
+    
+    <!-- Terminal window -->
+    <rect x="50" y="140" width="700" height="180" fill="#000000" stroke="#00ff88" stroke-width="2" rx="5" opacity="0.9"/>
+    
+    <!-- Terminal dots -->
+    <circle cx="70" cy="160" r="4" fill="#00ff88"/>
+    <circle cx="85" cy="160" r="4" fill="#00ff88"/>
+    <circle cx="100" cy="160" r="4" fill="#00ff88"/>
+    
+    <!-- Terminal content -->
+    <text class="terminal-text fade-in" x="70" y="195" style="animation-delay: 0.8s">omar@linux-box:~$</text>
+    <text class="terminal-text fade-in" x="210" y="195" fill="#ff0088" style="animation-delay: 1s">cat skills.txt</text>
+    
+    <text class="output-text fade-in" x="90" y="220" style="animation-delay: 1.2s">→ Crafting robust backend logic with Python (Django / FastAPI)</text>
+    <text class="output-text fade-in" x="90" y="240" style="animation-delay: 1.4s">→ Building modern, dynamic frontends with React</text>
+    <text class="output-text fade-in" x="90" y="260" style="animation-delay: 1.6s">→ Containerizing apps &amp; orchestrating with Docker &amp; Kubernetes</text>
+    <text class="output-text fade-in" x="90" y="280" style="animation-delay: 1.8s">→ Automation via Bash scripting &amp; Linux environment optimization</text>
+    
+    <text class="terminal-text fade-in" x="70" y="305" style="animation-delay: 2s">omar@linux-box:~$</text>
+    <rect class="blink" x="210" y="290" width="10" height="18" fill="#00ff88" style="animation-delay: 2.2s"/>
+    
+    <!-- Tech tags -->
+    <g class="fade-in" style="animation-delay: 2.2s">
+      <rect x="65" y="350" width="90" height="25" rx="12" fill="none" stroke="#00ff88" stroke-width="1.5"/>
+      <text x="110" y="368" font-family="'Courier New', monospace" font-size="12" fill="#00ff88" text-anchor="middle">Python</text>
+    </g>
+    
+    <g class="fade-in" style="animation-delay: 2.3s">
+      <rect x="165" y="350" width="90" height="25" rx="12" fill="none" stroke="#00ff88" stroke-width="1.5"/>
+      <text x="210" y="368" font-family="'Courier New', monospace" font-size="12" fill="#00ff88" text-anchor="middle">Django</text>
+    </g>
+    
+    <g class="fade-in" style="animation-delay: 2.4s">
+      <rect x="265" y="350" width="90" height="25" rx="12" fill="none" stroke="#00ff88" stroke-width="1.5"/>
+      <text x="310" y="368" font-family="'Courier New', monospace" font-size="12" fill="#00ff88" text-anchor="middle">React</text>
+    </g>
+    
+    <g class="fade-in" style="animation-delay: 2.5s">
+      <rect x="365" y="350" width="90" height="25" rx="12" fill="none" stroke="#00ff88" stroke-width="1.5"/>
+      <text x="410" y="368" font-family="'Courier New', monospace" font-size="12" fill="#00ff88" text-anchor="middle">Docker</text>
+    </g>
+    
+    <g class="fade-in" style="animation-delay: 2.6s">
+      <rect x="465" y="350" width="105" height="25" rx="12" fill="none" stroke="#00ff88" stroke-width="1.5"/>
+      <text x="517" y="368" font-family="'Courier New', monospace" font-size="12" fill="#00ff88" text-anchor="middle">Kubernetes</text>
+    </g>
+    
+    <g class="fade-in" style="animation-delay: 2.7s">
+      <rect x="580" y="350" width="155" height="25" rx="12" fill="none" stroke="#ff0088" stroke-width="1.5"/>
+      <text x="657" y="368" font-family="'Courier New', monospace" font-size="12" fill="#ff0088" text-anchor="middle">Struggler (Berserk)</text>
+    </g>
+  </svg>
 </div>
 
 ###
@@ -79,7 +231,7 @@
 
 ###
 
-<br><br>
+<br>
 <div align="center">
   <table border="0" cellpadding="2" cellspacing="2" align="center">
     <tr>

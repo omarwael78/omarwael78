@@ -81,18 +81,18 @@
 
 <br>
 <div align="center">
-  <table border="0" cellpadding="2" cellspacing="2" align="center">
+  <table border="0" cellpadding="6" cellspacing="6" align="center" style="width: 100%; max-width: 900px;">
     <tr>
-      <td align="center"><img height="110" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmhvZmFyZGQybm9iY2MwZGczcWJ1dm84aWZmeWR6MWxiaDh0N2tyNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EaEWuES5SDSpcnOlRt/200.webp" /></td>
-      <td align="center"><img height="110" src="https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3c2ZqeXBiMHFpYW1yY3Q4djdpMjRkZHV5bTh1eW9meDFpMWZ0ZTgzdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/S9d8XB557e8phGLBVS/giphy.webp" /></td>
-      <td align="center"><img height="110" src="https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bDNpeTFiZHdzOWxpNjdjYXlsemN2Mjl3cDVkZTJkMWs5NXl0dnJzMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/0eIgxkeDtLSbWLkOAc/giphy.webp" /></td>
-      <td align="center"><img height="110" src="https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZXJyN3dnb28zZWtneDFsb3FhbnFkaGdwN2U3bjZzMnJnN3EwZ2JvbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/pbIavlMZE7TkcVriMM/giphy.webp" /></td>
+      <td align="center" width="25%"><img height="160" width="100%" style="object-fit: cover; border-radius: 6px;" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmhvZmFyZGQybm9iY2MwZGczcWJ1dm84aWZmeWR6MWxiaDh0N2tyNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EaEWuES5SDSpcnOlRt/200.webp" /></td>
+      <td align="center" width="25%"><img height="160" width="100%" style="object-fit: cover; border-radius: 6px;" src="https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3c2ZqeXBiMHFpYW1yY3Q4djdpMjRkZHV5bTh1eW9meDFpMWZ0ZTgzdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/S9d8XB557e8phGLBVS/giphy.webp" /></td>
+      <td align="center" width="25%"><img height="160" width="100%" style="object-fit: cover; border-radius: 6px;" src="https://media2.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3bDNpeTFiZHdzOWxpNjdjYXlsemN2Mjl3cDVkZTJkMWs5NXl0dnJzMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/0eIgxkeDtLSbWLkOAc/giphy.webp" /></td>
+      <td align="center" width="25%"><img height="160" width="100%" style="object-fit: cover; border-radius: 6px;" src="https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZXJyN3dnb28zZWtneDFsb3FhbnFkaGdwN2U3bjZzMnJnN3EwZ2JvbyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/pbIavlMZE7TkcVriMM/giphy.webp" /></td>
     </tr>
     <tr>
-      <td align="center"><img height="110" src="https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3c2ZqeXBiMHFpYW1yY3Q4djdpMjRkZHV5bTh1eW9meDFpMWZ0ZTgzdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/DX1cytoIQvnmgqBlQ3/giphy.webp" /></td>
-      <td align="center"><img height="110" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXN5ZDM0NWJsNGc2NHl1endpY3J1dmh5bDhxaHBxbzhldmF2bHdieSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/66M6ZwJkTLYikvhrqZ/giphy.webp" /></td>
-      <td align="center"><img height="110" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXN5ZDM0NWJsNGc2NHl1endpY3J1dmh5bDhxaHBxbzhldmF2bHdieSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/GghGKaZ8JeHJx0apQC/giphy.webp" /></td>
-      <td align="center"><img height="110" src="https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZmtuOW5vaXA4cHBndmFtcDhubXpvOGVhZDdjaG12MzVxeDJtdm9layZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fha1cv4Le2lVRXXJsc/giphy.webp" /></td>
+      <td align="center" width="25%"><img height="160" width="100%" style="object-fit: cover; border-radius: 6px;" src="https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3c2ZqeXBiMHFpYW1yY3Q4djdpMjRkZHV5bTh1eW9meDFpMWZ0ZTgzdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/DX1cytoIQvnmgqBlQ3/giphy.webp" /></td>
+      <td align="center" width="25%"><img height="160" width="100%" style="object-fit: cover; border-radius: 6px;" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXN5ZDM0NWJsNGc2NHl1endpY3J1dmh5bDhxaHBxbzhldmF2bHdieSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/66M6ZwJkTLYikvhrqZ/giphy.webp" /></td>
+      <td align="center" width="25%"><img height="160" width="100%" style="object-fit: cover; border-radius: 6px;" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXN5ZDM0NWJsNGc2NHl1endpY3J1dmh5bDhxaHBxbzhldmF2bHdieSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/GghGKaZ8JeHJx0apQC/giphy.webp" /></td>
+      <td align="center" width="25%"><img height="160" width="100%" style="object-fit: cover; border-radius: 6px;" src="https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZmtuOW5vaXA4cHBndmFtcDhubXpvOGVhZDdjaG12MzVxeDJtdm9layZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fha1cv4Le2lVRXXJsc/giphy.webp" /></td>
     </tr>
   </table>
 </div>

@@ -81,7 +81,7 @@
 <br />
 
 <p align="center">
-  <img src="./dedsec-sys-panel.svg" alt="DedSec Operative System Panel" width="100%">
+  <img src="./dedsec-sys--panel.svg" alt="DedSec Operative System Panel" width="100%">
 </p>
 
 ###

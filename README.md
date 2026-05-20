@@ -7,7 +7,7 @@
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top" width="65%">
-      <h1 align="left">🐧 ~/ENG-Omar-Wael $ cat intro.md</h1>
+      <h1 align="left">🐧 ~/ENG-Omar-Wael $cat intro.md</h1>
       <p align="left">
         • <b>User:</b> Omar Wael <br>
         • <b>Type:</b> Full Stack Developer using Python <br>

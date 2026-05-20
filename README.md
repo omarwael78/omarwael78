@@ -81,7 +81,7 @@
 
 <br>
 <div align="center">
-  <img src="./projects.svg" width="100%" alt="Omar Wael Future Projects" />
+  <img src="./missions.svg" width="100%" alt="Omar Wael Future Projects" />
 </div>
 <br>
 

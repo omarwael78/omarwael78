@@ -154,7 +154,7 @@
     <text class="tool-text" x="35" y="68">→ Docker + Kubernetes</text>
     <text class="desc-text" x="55" y="86">Containerization, orchestration, scaling</text>
     
-    <text class="tool-text" x="35" y="113">→ Linux (Arch btw) + Bash</text>
+    <text class="tool-text" x="35" y="113">→ Linux (Ubuntu btw) + Bash</text>
     <text class="desc-text" x="55" y="131">Server management, automation scripts</text>
     
     <text class="tool-text" x="35" y="158">→ GitHub Actions</text>

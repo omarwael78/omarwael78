@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./terminal-v3.svg" width="100%" alt="Omar Wael Terminal Core" />
+  <img src="./terminal-v4.svg" width="100%" alt="Omar Wael Terminal Core" />
 </div>
 
 ###

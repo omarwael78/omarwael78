@@ -1,0 +1,285 @@
+<svg width="100%" height="100%" viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Watch Dogs 2 Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Hexagon Pattern -->
+    <pattern id="hexPattern" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
+      <path d="M 30,0 L 50,13 L 50,39 L 30,52 L 10,39 L 10,13 Z" 
+            fill="none" stroke="#00ff41" stroke-width="0.5" opacity="0.08"/>
+    </pattern>
+    
+    <!-- Scanlines -->
+    <pattern id="scanlines" x="0" y="0" width="100%" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100%" y2="0" stroke="#00ff41" stroke-width="0.5" opacity="0.03"/>
+    </pattern>
+    
+    <!-- WD2 Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .main-title { 
+        font-family: 'Courier New', monospace; 
+        font-size: 32px; 
+        font-weight: bold; 
+        fill: #ffffff; 
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+      .section-title { 
+        font-family: 'Courier New', monospace; 
+        font-size: 16px; 
+        font-weight: bold; 
+      }
+      .project-title { 
+        font-family: 'Courier New', monospace; 
+        font-size: 14px; 
+        font-weight: bold; 
+        fill: #ffffff; 
+      }
+      .body-text { 
+        font-family: 'Courier New', monospace; 
+        font-size: 12px; 
+        fill: #cccccc; 
+      }
+      .tech-stack { 
+        font-family: 'Courier New', monospace; 
+        font-size: 11px; 
+        fill: #888888; 
+      }
+      .footer-text { 
+        font-family: 'Courier New', monospace; 
+        font-size: 13px; 
+        fill: #ff0066; 
+        font-weight: bold; 
+        letter-spacing: 1px;
+      }
+      
+      .green-text { fill: #00ff41; }
+      .pink-text { fill: #ff0066; }
+      .orange-text { fill: #ff9900; }
+      
+      .card-green { 
+        stroke: #00ff41; 
+        stroke-width: 2; 
+        fill: #000000; 
+        fill-opacity: 0.85;
+      }
+      .card-pink { 
+        stroke: #ff0066; 
+        stroke-width: 2; 
+        fill: #000000; 
+        fill-opacity: 0.85;
+      }
+      .card-orange { 
+        stroke: #ff9900; 
+        stroke-width: 2; 
+        fill: #000000; 
+        fill-opacity: 0.85;
+      }
+      
+      @keyframes pulse {
+        0%, 100% { opacity: 0.2; transform: scale(0.9); }
+        50% { opacity: 1; transform: scale(1.1); }
+      }
+      
+      @keyframes glitch {
+        0%, 100% { opacity: 0; }
+        2%, 8% { opacity: 0.6; transform: translate(-2px, 0); }
+        4%, 6% { opacity: 0.6; transform: translate(2px, 0); }
+      }
+      
+      .pulse-dot { 
+        animation: pulse 1.5s infinite; 
+        transform-origin: center;
+      }
+      .glitch-shadow { animation: glitch 3s infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="480" fill="url(#bg)" rx="8"/>
+  <rect width="900" height="480" fill="url(#hexPattern)"/>
+  <rect width="900" height="480" fill="url(#scanlines)"/>
+  
+  <!-- Animated Scanline -->
+  <rect width="900" height="2" fill="#00ff41" opacity="0.3">
+    <animate attributeName="y" values="-2;480;-2" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Corner Brackets -->
+  <g opacity="0.8">
+    <line x1="40" y1="30" x2="110" y2="30" stroke="#00ff41" stroke-width="3"/>
+    <line x1="40" y1="30" x2="40" y2="100" stroke="#00ff41" stroke-width="3"/>
+    <line x1="860" y1="30" x2="790" y2="30" stroke="#00ff41" stroke-width="3"/>
+    <line x1="860" y1="30" x2="860" y2="100" stroke="#00ff41" stroke-width="3"/>
+    <line x1="40" y1="450" x2="110" y2="450" stroke="#00ff41" stroke-width="3"/>
+    <line x1="40" y1="450" x2="40" y2="380" stroke="#00ff41" stroke-width="3"/>
+    <line x1="860" y1="450" x2="790" y2="450" stroke="#00ff41" stroke-width="3"/>
+    <line x1="860" y1="450" x2="860" y2="380" stroke="#00ff41" stroke-width="3"/>
+  </g>
+
+  <!-- Decorative Lines -->
+  <line x1="60" y1="85" x2="840" y2="85" stroke="#00ff41" stroke-width="2" opacity="0.4">
+    <animate attributeName="stroke-dasharray" values="0 780; 780 0" dur="3s" repeatCount="indefinite"/>
+  </line>
+  <line x1="60" y1="425" x2="840" y2="425" stroke="#ff0066" stroke-width="1" opacity="0.3">
+    <animate attributeName="stroke-dasharray" values="780 0; 0 780" dur="3s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Glitch Title Shadow -->
+  <text class="main-title glitch-shadow" x="450" y="60" text-anchor="middle" fill="#ff0066" opacity="0.5">
+    MISSION OBJECTIVES
+  </text>
+
+  <!-- Main Title Without Emojis -->
+  <text class="main-title green-text" x="450" y="60" text-anchor="middle" filter="url(#glow)">
+    MISSION OBJECTIVES
+  </text>
+
+  <!-- Left Status Dot (نقطة مضيئة يسار العنوان) -->
+  <circle cx="210" cy="50" r="6" fill="#00ff41" filter="url(#glow)" class="pulse-dot"/>
+
+  <!-- Right Status Dot (نقطة مضيئة يمين العنوان) -->
+  <circle cx="690" cy="50" r="6" fill="#00ff41" filter="url(#glow)" class="pulse-dot"/>
+
+  <!-- CARD 1: Web Apps -->
+  <g transform="translate(50, 110)">
+    <rect class="card-green" width="240" height="280" rx="4">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Corner Indicators -->
+    <circle cx="10" cy="10" r="3" fill="#00ff41" opacity="0.8"/>
+    <circle cx="230" cy="10" r="3" fill="#00ff41" opacity="0.8"/>
+    <circle cx="10" cy="270" r="3" fill="#00ff41" opacity="0.8"/>
+    <circle cx="230" cy="270" r="3" fill="#00ff41" opacity="0.8"/>
+    
+    <!-- Scanner Line -->
+    <line x1="10" y1="0" x2="230" y2="0" stroke="#00ff41" stroke-width="1.5" opacity="0.7">
+      <animate attributeName="y1" values="5;275;5" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="5;275;5" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- Card Internal Status Dot -->
+    <circle cx="25" cy="25" r="5" fill="#00ff41" class="pulse-dot"/>
+    
+    <!-- Side Accent Bar -->
+    <rect x="5" y="15" width="3" height="250" fill="#00ff41" opacity="0.3"/>
+    
+    <text class="section-title green-text" x="40" y="30">// WEB_APPS</text>
+    <line x1="40" y1="35" x2="150" y2="35" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
+    
+    <text class="project-title" x="20" y="70">⚡ SaaS Platform</text>
+    <text class="body-text" x="20" y="95">▸ Building multi-tenant</text>
+    <text class="body-text" x="20" y="113">▸ apps with complex bff,</text>
+    <text class="body-text" x="20" y="131">▸ subscription layers,</text>
+    <text class="body-text" x="20" y="149">▸ and dynamic billing.</text>
+    
+    <line x1="20" y1="175" x2="220" y2="175" stroke="#00ff41" stroke-width="1" opacity="0.2"/>
+    
+    <text class="tech-stack" x="20" y="200" fill="#00ff41">TECH_STACK:</text>
+    <text class="tech-stack" x="20" y="220">→ Backend: Django</text>
+    <text class="tech-stack" x="20" y="238">→ Frontend: React</text>
+    <text class="tech-stack" x="20" y="256">→ DB: PostgreSQL</text>
+  </g>
+
+  <!-- CARD 2: AI Agents -->
+  <g transform="translate(330, 110)">
+    <rect class="card-pink" width="240" height="280" rx="4">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    
+    <circle cx="10" cy="10" r="3" fill="#ff0066" opacity="0.8"/>
+    <circle cx="230" cy="10" r="3" fill="#ff0066" opacity="0.8"/>
+    <circle cx="10" cy="270" r="3" fill="#ff0066" opacity="0.8"/>
+    <circle cx="230" cy="270" r="3" fill="#ff0066" opacity="0.8"/>
+    
+    <line x1="10" y1="0" x2="230" y2="0" stroke="#ff0066" stroke-width="1.5" opacity="0.7">
+      <animate attributeName="y1" values="275;5;275" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="275;5;275" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="4.5s" repeatCount="indefinite"/>
+    </line>
+    
+    <circle cx="25" cy="25" r="5" fill="#ff0066" class="pulse-dot"/>
+    <rect x="5" y="15" width="3" height="250" fill="#ff0066" opacity="0.3"/>
+    
+    <text class="section-title pink-text" x="40" y="30">// AI_AGENTS</text>
+    <line x1="40" y1="35" x2="150" y2="35" stroke="#ff0066" stroke-width="1" opacity="0.3"/>
+    
+    <text class="project-title" x="20" y="70">🤖 Autonomous Crew</text>
+    <text class="body-text" x="20" y="95">▸ Multi-agent systems</text>
+    <text class="body-text" x="20" y="113">▸ for automated research,</text>
+    <text class="body-text" x="20" y="131">▸ code generation, and</text>
+    <text class="body-text" x="20" y="149">▸ smart data analysis.</text>
+    
+    <line x1="20" y1="175" x2="220" y2="175" stroke="#ff0066" stroke-width="1" opacity="0.2"/>
+    
+    <text class="tech-stack" x="20" y="200" fill="#ff0066">TECH_STACK:</text>
+    <text class="tech-stack" x="20" y="220">→ Core: Python / FastAPI</text>
+    <text class="tech-stack" x="20" y="238">→ LLMs: LangChain / CrewAI</text>
+    <text class="tech-stack" x="20" y="256">→ Tasks: VectorDB / RAG</text>
+  </g>
+
+  <!-- CARD 3: DevOps -->
+  <g transform="translate(610, 110)">
+    <rect class="card-orange" width="240" height="280" rx="4">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    
+    <circle cx="10" cy="10" r="3" fill="#ff9900" opacity="0.8"/>
+    <circle cx="230" cy="10" r="3" fill="#ff9900" opacity="0.8"/>
+    <circle cx="10" cy="270" r="3" fill="#ff9900" opacity="0.8"/>
+    <circle cx="230" cy="270" r="3" fill="#ff9900" opacity="0.8"/>
+    
+    <line x1="10" y1="0" x2="230" y2="0" stroke="#ff9900" stroke-width="1.5" opacity="0.7">
+      <animate attributeName="y1" values="5;275;5" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="5;275;5" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.8s" repeatCount="indefinite"/>
+    </line>
+    
+    <circle cx="25" cy="25" r="5" fill="#ff9900" class="pulse-dot"/>
+    <rect x="5" y="15" width="3" height="250" fill="#ff9900" opacity="0.3"/>
+    
+    <text class="section-title orange-text" x="40" y="30">// DEVOPS</text>
+    <line x1="40" y1="35" x2="130" y2="35" stroke="#ff9900" stroke-width="1" opacity="0.3"/>
+    
+    <text class="project-title" x="20" y="70">🐳 Microservices</text>
+    <text class="body-text" x="20" y="95">▸ Containerizing full</text>
+    <text class="body-text" x="20" y="113">▸ stacks, managing</text>
+    <text class="body-text" x="20" y="131">▸ K8s clusters, and</text>
+    <text class="body-text" x="20" y="149">▸ CI/CD automation.</text>
+    
+    <line x1="20" y1="175" x2="220" y2="175" stroke="#ff9900" stroke-width="1" opacity="0.2"/>
+    
+    <text class="tech-stack" x="20" y="200" fill="#ff9900">TECH_STACK:</text>
+    <text class="tech-stack" x="20" y="220">→ Infra: Linux / Bash</text>
+    <text class="tech-stack" x="20" y="238">→ Ops: Docker / K8s</text>
+    <text class="tech-stack" x="20" y="256">→ CI/CD: GitHub Actions</text>
+  </g>
+
+  <!-- Updated Berserk Quote Footer -->
+  <text class="footer-text" x="450" y="455" text-anchor="middle" filter="url(#glow)">
+    "Keep moving forward. Even if it's painful." — The Struggler
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+  </text>
+  
+  <!-- Binary Elements -->
+  <g opacity="0.15">
+    <text x="55" y="260" font-family="'Courier New', monospace" font-size="9" fill="#00ff41">01101111</text>
+    <text x="870" y="220" font-family="'Courier New', monospace" font-size="9" fill="#ff0066">01110111</text>
+    <text x="65" y="350" font-family="'Courier New', monospace" font-size="9" fill="#ff9900">01100001</text>
+  </g>
+</svg>

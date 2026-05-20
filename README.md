@@ -93,6 +93,7 @@
 <br>
 
 ###
+
 <p align="center">
   <img src="./tech-stack-radar.svg" alt="Omar Wael Tech Stack" width="100%">
 </p>

@@ -114,7 +114,7 @@
   <text class="output-text fade-in" x="90" y="225" style="animation-delay: 1.2s">→ Crafting robust backend logic with Python (Django / FastAPI)</text>
   <text class="output-text fade-in" x="90" y="245" style="animation-delay: 1.4s">→ Building modern, dynamic frontends with React</text>
   
-  <!-- السطر المعدل: دمج الـ DevOps مع الـ AI Agents بشكل صايع ومختصر -->
+  <!-- السطر المدمج والموزون -->
   <text class="output-text fade-in" x="90" y="265" style="animation-delay: 1.6s">→ Deploying &amp; orchestrating Autonomous AI Agents via Docker &amp; K8s</text>
   
   <text class="output-text fade-in" x="90" y="285" style="animation-delay: 1.8s">→ Automation via Bash scripting &amp; Linux environment optimization</text>

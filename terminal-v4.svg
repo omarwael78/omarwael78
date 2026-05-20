@@ -1,0 +1,252 @@
+<svg width="100%" height="100%" viewBox="0 0 900 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Watch Dogs 2 Style Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Hexagon Pattern من Watch Dogs -->
+    <pattern id="hexPattern" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
+      <path d="M 30,0 L 50,13 L 50,39 L 30,52 L 10,39 L 10,13 Z" 
+            fill="none" stroke="#00ff41" stroke-width="0.5" opacity="0.08"/>
+    </pattern>
+    
+    <!-- Scanlines -->
+    <pattern id="scanlines" x="0" y="0" width="100%" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100%" y2="0" stroke="#00ff41" stroke-width="0.5" opacity="0.03"/>
+    </pattern>
+    
+    <!-- WD2 Glow Effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <style>
+      .title {
+        font-family: 'Courier New', monospace;
+        font-size: 48px;
+        font-weight: bold;
+        fill: #ffffff;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+      }
+      
+      .subtitle {
+        font-family: 'Courier New', monospace;
+        font-size: 16px;
+        fill: #00ff41;
+        letter-spacing: 2px;
+      }
+      
+      .terminal-text {
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        fill: #00ff41;
+      }
+      
+      .output-text {
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        fill: #ffffff;
+      }
+      
+      .tag-text {
+        font-family: 'Courier New', monospace;
+        font-size: 12px;
+        fill: #00ff41;
+        font-weight: bold;
+      }
+      
+      /* WD2 Animations */
+      @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
+      }
+      
+      @keyframes glitch {
+        0%, 100% { opacity: 0; }
+        2%, 8% { opacity: 0.6; transform: translate(-3px, 0); }
+        4%, 6% { opacity: 0.6; transform: translate(3px, 0); }
+      }
+      
+      @keyframes draw { 
+        to { stroke-dashoffset: 0; } 
+      }
+      
+      @keyframes fadeIn { 
+        to { opacity: 1; } 
+      }
+      
+      @keyframes pulse {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+      
+      .blink { animation: blink 1s infinite; }
+      .glitch-shadow { animation: glitch 3s infinite; }
+      .line { 
+        stroke-dasharray: 850; 
+        stroke-dashoffset: 850; 
+        animation: draw 2s ease-in-out forwards; 
+      }
+      .fade-in { 
+        opacity: 0; 
+        animation: fadeIn 1s ease-in forwards; 
+      }
+      .pulse-dot { animation: pulse 1.5s infinite; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="450" fill="url(#bg)" rx="8"/>
+  <rect width="900" height="450" fill="url(#hexPattern)"/>
+  <rect width="900" height="450" fill="url(#scanlines)"/>
+  
+  <!-- Animated Scanline -->
+  <rect width="900" height="2" fill="#00ff41" opacity="0.3">
+    <animate attributeName="y" values="-2;450;-2" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Corner Brackets - WD2 Style -->
+  <g opacity="0.8">
+    <!-- Top Left -->
+    <line x1="40" y1="30" x2="110" y2="30" stroke="#00ff41" stroke-width="3"/>
+    <line x1="40" y1="30" x2="40" y2="100" stroke="#00ff41" stroke-width="3"/>
+    
+    <!-- Top Right -->
+    <line x1="860" y1="30" x2="790" y2="30" stroke="#00ff41" stroke-width="3"/>
+    <line x1="860" y1="30" x2="860" y2="100" stroke="#00ff41" stroke-width="3"/>
+    
+    <!-- Bottom Left -->
+    <line x1="40" y1="420" x2="110" y2="420" stroke="#00ff41" stroke-width="3"/>
+    <line x1="40" y1="420" x2="40" y2="350" stroke="#00ff41" stroke-width="3"/>
+    
+    <!-- Bottom Right -->
+    <line x1="860" y1="420" x2="790" y2="420" stroke="#00ff41" stroke-width="3"/>
+    <line x1="860" y1="420" x2="860" y2="350" stroke="#00ff41" stroke-width="3"/>
+  </g>
+  
+  <!-- Decorative diagonal lines -->
+  <line class="line" x1="60" y1="135" x2="840" y2="135" stroke="#00ff41" stroke-width="2" opacity="0.4"/>
+  <line class="line" x1="60" y1="205" x2="840" y2="205" stroke="#ff0066" stroke-width="1" opacity="0.3" style="animation-delay: 0.3s"/>
+  <line class="line" x1="60" y1="370" x2="840" y2="370" stroke="#00ff41" stroke-width="1" opacity="0.3" style="animation-delay: 0.6s"/>
+  
+  <!-- Glitch shadow effect -->
+  <text class="title glitch-shadow" x="450" y="85" text-anchor="middle" fill="#ff0066" opacity="0.5">
+    OMAR WAEL
+  </text>
+  
+  <!-- Main title with glow -->
+  <text class="title" x="450" y="85" text-anchor="middle" filter="url(#glow)">
+    OMAR WAEL
+  </text>
+
+  <!-- Status Indicator Dot - الآن في الجانب الأيسر قبل الاسم متناسقة تماماً -->
+  <circle cx="290" cy="70" r="7" fill="#00ff41" filter="url(#glow)" class="pulse-dot"/>
+  
+  <!-- Subtitle -->
+  <text class="subtitle fade-in" x="450" y="115" text-anchor="middle" style="animation-delay: 0.5s">
+    [ DEDSEC OPERATIVE // FULL-STACK HACKER // CAFFEINE-POWERED ]
+  </text>
+  
+  <!-- Terminal window with WD2 styling -->
+  <g>
+    <rect x="60" y="155" width="780" height="200" fill="#000000" stroke="#00ff41" stroke-width="2" rx="4" opacity="0.85"/>
+    
+    <!-- Terminal corner indicators -->
+    <circle cx="70" cy="165" r="3" fill="#00ff41" opacity="0.8"/>
+    <circle cx="830" cy="165" r="3" fill="#00ff41" opacity="0.8"/>
+    <circle cx="70" cy="345" r="3" fill="#00ff41" opacity="0.8"/>
+    <circle cx="830" cy="345" r="3" fill="#00ff41" opacity="0.8"/>
+    
+    <!-- Terminal dots -->
+    <circle cx="85" cy="180" r="4" fill="#00ff41">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="105" cy="180" r="4" fill="#00ff41">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="125" cy="180" r="4" fill="#00ff41">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Terminal content -->
+    <text class="terminal-text fade-in" x="85" y="215" style="animation-delay: 0.8s">
+      wrench@dedsec:~$
+    </text>
+    <text class="terminal-text fade-in" x="230" y="215" fill="#ff0066" style="animation-delay: 1s">
+      ./display_skills.sh
+    </text>
+    
+    <text class="output-text fade-in" x="105" y="245" style="animation-delay: 1.2s">
+      ▸ Crafting robust backend logic with Python (Django / FastAPI)
+    </text>
+    <text class="output-text fade-in" x="105" y="270" style="animation-delay: 1.4s">
+      ▸ Building modern, dynamic frontends with React
+    </text>
+    <text class="output-text fade-in" x="105" y="295" style="animation-delay: 1.6s">
+      ▸ Orchestrating AI Automation Agents using n8n, Zapier &amp; Python
+    </text>
+    <text class="output-text fade-in" x="105" y="320" style="animation-delay: 1.8s">
+      ▸ Automation via Bash scripting &amp; Linux environment optimization
+    </text>
+    
+    <!-- Blinking cursor -->
+    <text class="terminal-text fade-in" x="85" y="345" style="animation-delay: 2s">
+      wrench@dedsec:~$
+    </text>
+    <rect class="blink" x="230" y="330" width="12" height="20" fill="#00ff41" style="animation-delay: 2.2s"/>
+  </g>
+  
+  <!-- Tech tags with WD2 style -->
+  <g class="fade-in" style="animation-delay: 2.2s">
+    <rect x="75" y="385" width="95" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
+    <rect x="77" y="387" width="5" height="24" fill="#00ff41" opacity="0.6"/>
+    <text class="tag-text" x="122" y="405" text-anchor="middle">PYTHON</text>
+  </g>
+  
+  <g class="fade-in" style="animation-delay: 2.3s">
+    <rect x="185" y="385" width="95" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
+    <rect x="187" y="387" width="5" height="24" fill="#00ff41" opacity="0.6"/>
+    <text class="tag-text" x="232" y="405" text-anchor="middle">DJANGO</text>
+  </g>
+  
+  <g class="fade-in" style="animation-delay: 2.4s">
+    <rect x="295" y="385" width="95" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
+    <rect x="297" y="387" width="5" height="24" fill="#00ff41" opacity="0.6"/>
+    <text class="tag-text" x="342" y="405" text-anchor="middle">REACT</text>
+  </g>
+  
+  <g class="fade-in" style="animation-delay: 2.5s">
+    <rect x="405" y="385" width="95" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
+    <rect x="407" y="387" width="5" height="24" fill="#00ff41" opacity="0.6"/>
+    <text class="tag-text" x="452" y="405" text-anchor="middle">DOCKER</text>
+  </g>
+  
+  <g class="fade-in" style="animation-delay: 2.6s">
+    <rect x="515" y="385" width="125" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
+    <rect x="517" y="387" width="5" height="24" fill="#00ff41" opacity="0.6"/>
+    <text class="tag-text" x="577" y="405" text-anchor="middle">KUBERNETES</text>
+  </g>
+  
+  <g class="fade-in" style="animation-delay: 2.7s">
+    <rect x="655" y="385" width="170" height="28" rx="3" fill="none" stroke="#ff0066" stroke-width="2"/>
+    <rect x="657" y="387" width="5" height="24" fill="#ff0066" opacity="0.8"/>
+    <text class="tag-text" x="740" y="405" text-anchor="middle" fill="#ff0066">STRUGGLER MODE</text>
+  </g>
+  
+  <!-- Binary floating elements -->
+  <g opacity="0.2">
+    <text x="50" y="250" font-family="'Courier New', monospace" font-size="9" fill="#00ff41">01101111</text>
+    <text x="850" y="200" font-family="'Courier New', monospace" font-size="9" fill="#00ff41">01110111</text>
+    <text x="60" y="320" font-family="'Courier New', monospace" font-size="9" fill="#00ff41">01100001</text>
+    <text x="840" y="300" font-family="'Courier New', monospace" font-size="9" fill="#00ff41">01100101</text>
+  </g>
+</svg>

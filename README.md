@@ -88,7 +88,7 @@
 ###
 
 <div align="center">
-  <img src="./dashboard.svg" width="100%" alt="System Live Monitor Dashboard" />
+  <img src="./live-monitor.svg" width="100%" alt="System Live Monitor Dashboard" />
 </div>
 <br>
 

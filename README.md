@@ -87,8 +87,9 @@
 
 ###
 
+<!-- الـ Stacked Dashboard الجديد بالكامل هنا -->
 <div align="center">
-  <img src="./dashboard.svg" width="100%" alt="System Live Monitor Dashboard" />
+  <img src="./dashboard.svg" width="100%" alt="System Live Monitor Stacked Dashboard" />
 </div>
 <br>
 

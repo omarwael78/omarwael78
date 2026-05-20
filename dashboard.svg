@@ -1,16 +1,11 @@
-<svg width="100%" height="100%" viewBox="0 0 950 360" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="100%" viewBox="0 0 950 390" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
       @keyframes blink { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
       @keyframes pulse { 0% { r: 4; opacity: 1; } 100% { r: 9; opacity: 0; } }
       @keyframes typeLine { from { width: 0; } to { width: 100%; } }
       @keyframes gridPulse { 0%, 100% { opacity: 0.05; } 50% { opacity: 0.15; } }
-      
-      /* حركة الموجة الأفقية اللانهائية الحية */
-      @keyframes waveFlow {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-100px); }
-      }
+      @keyframes waveFlow { 0% { transform: translateX(0); } 100% { transform: translateX(-100px); } }
       
       .term-title { font-family: 'Courier New', monospace; font-size: 14px; fill: #00cc66; font-weight: bold; }
       .stat-label { font-family: 'Courier New', monospace; font-size: 12px; fill: #aaaaaa; }
@@ -18,28 +13,22 @@
       .log-txt { font-family: 'Courier New', monospace; font-size: 12px; fill: #00cc66; white-space: nowrap; }
       .log-err { font-family: 'Courier New', monospace; font-size: 12px; fill: #cc0066; }
       
-      /* تطبيق الحركات الديناميكية */
       .live-pulse { animation: pulse 1.5s infinite ease-out; }
       .live-dot { animation: blink 1.5s infinite; }
       .grid-bg { animation: gridPulse 4s infinite ease-in-out; }
       .type-effect { overflow: hidden; display: inline-block; animation: typeLine 2s steps(40, end) infinite alternate; }
-      
-      /* تحريك الموجات بسرعة ديناميكية */
       .moving-wave-1 { animation: waveFlow 4s infinite linear; }
       .moving-wave-2 { animation: waveFlow 2.5s infinite linear; }
     </style>
     
-    <!-- نمط الشبكة الخلفية -->
     <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
       <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#ffffff" stroke-width="1" class="grid-bg"/>
     </pattern>
   </defs>
 
-  <!-- الخلفية الفحمية الداكنة -->
-  <rect width="950" height="360" fill="#070708" rx="8" stroke="#222222" stroke-width="1"/>
-  
-  <!-- تطبيق الشبكة الخلفية -->
-  <rect width="950" height="360" fill="url(#grid)" />
+  <!-- الخلفية الفحمية الداكنة (تم زيادة الارتفاع لـ 390 لاستيعاب السطر الجديد براحة) -->
+  <rect width="950" height="390" fill="#070708" rx="8" stroke="#222222" stroke-width="1"/>
+  <rect width="950" height="390" fill="url(#grid)" />
 
   <!-- هيدر الشاشة الحية -->
   <g transform="translate(25, 30)">
@@ -48,41 +37,42 @@
     <text class="term-title" x="25" y="0">[🟢 SYSTEM LIVE MONITOR - DJANGO CORE]</text>
   </g>
 
-  <!-- BLOCK 1: الإحصائيات -->
+  <!-- BLOCK 1: الإحصائيات منسقة في سطور مريحة -->
   <g transform="translate(25, 65)">
+    <!-- السطر الأول -->
     <text class="stat-label" x="0" y="15">Server Status:</text>
     <text class="stat-val" x="140" y="15" fill="#00cc66">Running Successfully until you edit it without omar permission</text>
 
+    <!-- السطر الثاني -->
     <text class="stat-label" x="0" y="40">Response Time:</text>
     <text class="stat-val" x="140" y="40">18ms <tspan fill="#cc0066" font-size="11"> (Ultra fast until you call me on vacations)</tspan></text>
 
+    <!-- السطر الثالث -->
     <text class="stat-label" x="0" y="65">Total Requests:</text>
     <text class="stat-val" x="140" y="65">45,218 <tspan class="live-dot" fill="#00cc66">✦</tspan></text>
     
-    <text class="stat-label" x="320" y="65">Coffee Dev Ratio:</text>
-    <text class="stat-val" x="460" y="65" fill="#cc0066">1 Shot : 400 Lines</text>
+    <!-- السطر الرابع (تنزيل الإحصائيات الباقية هنا لضمان ظهورها بالكامل) -->
+    <text class="stat-label" x="0" y="90">Coffee Ratio:</text>
+    <text class="stat-val" x="140" y="90" fill="#cc0066">1 Shot : 400 Lines</text>
 
-    <text class="stat-label" x="650" y="65">Bugs in Prod:</text>
-    <text class="stat-val" x="760" y="65" fill="#cc0066">0 (We don't talk about local)</text>
+    <text class="stat-label" x="350" y="90">Bugs in Prod:</text>
+    <text class="stat-val" x="480" y="90" fill="#cc0066">0 (We don't talk about local)</text>
   </g>
 
-  <!-- خط فاصل أفقي أول -->
-  <line x1="25" y1="155" x2="925" y2="155" stroke="#222222" stroke-width="1"/>
+  <!-- خط فاصل أفقي أول (تم ترحيله للأسفل ليناسب السطور الجديدة) -->
+  <line x1="25" y1="180" x2="925" y2="180" stroke="#222222" stroke-width="1"/>
 
-  <!-- BLOCK 2: الرسم البياني المتحرك أفقياً (الموجة الحية) -->
-  <g transform="translate(25, 170)">
+  <!-- BLOCK 2: الرسم البياني المتحرك (الموجة الحية) -->
+  <g transform="translate(25, 195)">
     <text class="stat-label" x="0" y="15">API Traffic Load (Live Wave):</text>
     
     <g transform="translate(180, 5)">
-      <!-- تكرار مسار الموجة داخل حاوية مع تفعيل الـ overflow لمنع الخروج عن الحدود -->
       <svg width="720" height="60" viewBox="0 0 720 60" style="overflow:hidden;">
         <g class="moving-wave-1">
-          <!-- موجة مكررة ممتدة لليمين لضمان استمرار الحركة بدون قطع -->
           <path d="M0,40 Q40,10 80,35 T160,20 T240,45 T320,15 T400,35 T480,10 T560,40 T640,20 T720,30 T800,20 T880,45 T960,15 T1040,35 Z" fill="#00cc66" fill-opacity="0.04"/>
           <path d="M0,40 Q40,10 80,35 T160,20 T240,45 T320,15 T400,35 T480,10 T560,40 T640,20 T720,30 T800,20 T880,45 T960,15 T1040,35" stroke="#00cc66" stroke-width="2" stroke-linecap="round"/>
         </g>
         <g class="moving-wave-2">
-          <!-- موجة الـ Spikes السريعة المنقطة باللون الأحمر لتعزيز الديناميكية -->
           <path d="M0,35 Q50,45 100,15 T200,50 T300,10 T400,40 T500,5 T600,35 T720,25 T820,50 T920,10 T1020,40" stroke="#cc0066" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
         </g>
       </svg>
@@ -90,10 +80,10 @@
   </g>
 
   <!-- خط فاصل أفقي ثاني -->
-  <line x1="25" y1="260" x2="925" y2="260" stroke="#222222" stroke-width="1"/>
+  <line x1="25" y1="285" x2="925" y2="285" stroke="#222222" stroke-width="1"/>
 
-  <!-- BLOCK 3: الـ Logs المتحركة مع تأثير الـ Typing -->
-  <g transform="translate(25, 275)">
+  <!-- BLOCK 3: الـ Logs المتحركة -->
+  <g transform="translate(25, 300)">
     <text class="stat-label" x="0" y="15">Latest Activity Log:</text>
     
     <g transform="translate(180, 2)">

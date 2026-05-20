@@ -73,11 +73,3 @@
   </a>
 </p>
 <!-- END OF CYBERPUNK FOOTER -->
----
-
-## 🛑 License & Copyright
-
-This project is licensed under the **GNU General Public License v3.0** - see the [LICENSE](LICENSE) file for details.
-
-⚠️ **تنبيه:** محتوى هذا الملف والمشروع محمي بالكامل. غير مسموح بنسخ الـ README أو الكود ونسبه لنفسك. أي سرقة للمحتوى سيتم التعامل معها فورًا وإبلاغ إدارة GitHub لإغلاق المستودع المخالف عبر (DMCA Takedown).
-

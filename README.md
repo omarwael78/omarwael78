@@ -107,6 +107,10 @@
 
 ###
 
-<div>
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&animation=scaleIn&descSize=20&descAlign=50&descAlignY=50&theme=dark" />
-</div>
+<!-- START OF CYBERPUNK FOOTER -->
+<p align="center">
+  <a href="https://github.com/omarwael78">
+    <img src="./footer.svg" alt="DedSec Footer" width="100%">
+  </a>
+</p>
+<!-- END OF CYBERPUNK FOOTER -->

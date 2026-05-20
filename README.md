@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./banner.svg" width="100%" alt="Omar Wael Banner" />
+  <img src="./terminal-core.svg" width="100%" alt="Omar Wael Terminal Header" />
 </div>
 
 ###

@@ -1,0 +1,318 @@
+<svg width="100%" height="100%" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- WD2 Background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#050505;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Hexagon Pattern -->
+    <pattern id="hexPattern" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
+      <path d="M 30,0 L 50,13 L 50,39 L 30,52 L 10,39 L 10,13 Z" 
+            fill="none" stroke="#00ff41" stroke-width="0.5" opacity="0.06"/>
+    </pattern>
+    
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.02"/>
+    </pattern>
+    
+    <!-- Scanlines -->
+    <pattern id="scanlines" x="0" y="0" width="100%" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100%" y2="0" stroke="#00ff41" stroke-width="0.5" opacity="0.03"/>
+    </pattern>
+    
+    <!-- WD2 Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <style>
+      @keyframes blink { 
+        0%, 100% { opacity: 0.2; } 
+        50% { opacity: 1; } 
+      }
+      
+      @keyframes pulse { 
+        0% { transform: scale(0.85); opacity: 0.4; } 
+        50% { transform: scale(1.15); opacity: 1; }
+        100% { transform: scale(0.85); opacity: 0.4; } 
+      }
+      
+      @keyframes gridPulse { 
+        0%, 100% { opacity: 0.03; } 
+        50% { opacity: 0.12; } 
+      }
+      
+      @keyframes waveFlow { 
+        0% { transform: translateX(0); } 
+        100% { transform: translateX(-160px); } 
+      }
+      
+      @keyframes dataFlowLeft {
+        0% { transform: translateX(-100px); opacity: 0; }
+        10%, 90% { opacity: 0.15; }
+        100% { transform: translateX(300px); opacity: 0; }
+      }
+
+      @keyframes dataFlowRight {
+        0% { transform: translateX(100px); opacity: 0; }
+        10%, 90% { opacity: 0.15; }
+        100% { transform: translateX(-300px); opacity: 0; }
+      }
+      
+      @keyframes glitch {
+        0%, 100% { opacity: 0; transform: scaleY(1); }
+        2%, 8% { opacity: 0.7; transform: translate(-3px, 1px); }
+        4%, 6% { opacity: 0.7; transform: translate(3px, -1px); }
+      }
+
+      @keyframes glitchLine {
+        0%, 95%, 100% { opacity: 0; transform: translateY(0); }
+        96% { opacity: 0.8; transform: translateY(100px) scaleY(2); }
+        98% { opacity: 0.4; transform: translateY(250px) scaleY(0.5); }
+      }
+      
+      .term-title { 
+        font-family: 'Courier New', monospace; 
+        font-size: 16px; 
+        fill: #ffffff; 
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      
+      .stat-label { 
+        font-family: 'Courier New', monospace; 
+        font-size: 12px; 
+        fill: #888888; 
+      }
+      
+      .stat-val { 
+        font-family: 'Courier New', monospace; 
+        font-size: 13px; 
+        fill: #ffffff; 
+        font-weight: bold; 
+      }
+      
+      .log-txt { 
+        font-family: 'Courier New', monospace; 
+        font-size: 12px; 
+        fill: #00ff41; 
+      }
+      
+      .log-err { 
+        font-family: 'Courier New', monospace; 
+        font-size: 12px; 
+        fill: #ff0066; 
+      }
+      
+      .log-guts { 
+        font-family: 'Courier New', monospace; 
+        font-size: 12px; 
+        fill: #ff9900; 
+        font-weight: bold; 
+      }
+      
+      .log-luffy { 
+        font-family: 'Courier New', monospace; 
+        font-size: 12px; 
+        fill: #ff3333; 
+        font-weight: bold; 
+      }
+      
+      .footer-text { 
+        font-family: 'Courier New', monospace; 
+        font-size: 12px; 
+        fill: #ff0066; 
+        font-weight: bold; 
+        letter-spacing: 0.5px;
+      }
+      
+      .live-pulse { 
+        animation: pulse 1.8s infinite ease-in-out; 
+        transform-origin: center;
+      }
+      .live-dot { animation: blink 1.2s infinite; }
+      .grid-bg { animation: gridPulse 5s infinite ease-in-out; }
+      .moving-wave-1 { animation: waveFlow 3.5s infinite linear; }
+      .moving-wave-2 { animation: waveFlow 2s infinite linear; }
+      .glitch-shadow { animation: glitch 2.5s infinite; }
+      .glitch-bar { animation: glitchLine 6s infinite linear; }
+      
+      .df-left { animation: dataFlowLeft 8s infinite linear; }
+      .df-right { animation: dataFlowRight 9s infinite linear; }
+    </style>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="1000" height="500" fill="url(#bgGrad)" rx="8"/>
+  <rect width="1000" height="500" fill="url(#hexPattern)"/>
+  <rect width="1000" height="500" fill="url(#grid)" class="grid-bg"/>
+  <rect width="1000" height="500" fill="url(#scanlines)"/>
+  
+  <!-- Animated Scanline Matrix -->
+  <rect width="1000" height="2" fill="#00ff41" opacity="0.25">
+    <animate attributeName="y" values="-5;505;-5" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Hacking Ambient Glitch Lines -->
+  <rect class="glitch-bar" x="150" y="50" width="700" height="1" fill="#ff0066" opacity="0"/>
+  <rect class="glitch-bar" x="50" y="200" width="300" height="2" fill="#00ff41" opacity="0"/>
+
+  <!-- Corner Brackets - WD2 Style -->
+  <g opacity="0.85">
+    <line x1="30" y1="25" x2="100" y2="25" stroke="#00ff41" stroke-width="3"/>
+    <line x1="30" y1="25" x2="30" y2="95" stroke="#00ff41" stroke-width="3"/>
+    <line x1="970" y1="25" x2="900" y2="25" stroke="#00ff41" stroke-width="3"/>
+    <line x1="970" y1="25" x2="970" y2="95" stroke="#00ff41" stroke-width="3"/>
+    <line x1="30" y1="475" x2="100" y2="475" stroke="#00ff41" stroke-width="3"/>
+    <line x1="30" y1="475" x2="30" y2="405" stroke="#00ff41" stroke-width="3"/>
+    <line x1="970" y1="475" x2="900" y2="475" stroke="#00ff41" stroke-width="3"/>
+    <line x1="970" y1="475" x2="970" y2="405" stroke="#00ff41" stroke-width="3"/>
+  </g>
+
+  <!-- Decorative Top Fast Line -->
+  <line x1="50" y1="50" x2="950" y2="50" stroke="#00ff41" stroke-width="2" opacity="0.4">
+    <animate attributeName="stroke-dasharray" values="0,900; 900,0; 0,900" dur="4s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Header Section -->
+  <g transform="translate(30, 35)">
+    <!-- Left Pulsing Target Dot -->
+    <circle class="live-pulse" cx="10" cy="-4" r="5" fill="#00ff41" filter="url(#glow)"/>
+    
+    <!-- Glitch Text Backing -->
+    <text class="term-title glitch-shadow" x="30" y="0" fill="#ff0066" opacity="0.5">
+      SYSTEM LIVE MONITOR // DEDSEC_OPERATIVE
+    </text>
+    
+    <!-- Main Header -->
+    <text class="term-title" x="30" y="0" fill="#00ff41" filter="url(#glow)">
+      SYSTEM LIVE MONITOR // DEDSEC_OPERATIVE
+    </text>
+
+    <!-- Right Pulsing Target Dot -->
+    <circle class="live-pulse" cx="445" cy="-4" r="5" fill="#00ff41" filter="url(#glow)"/>
+  </g>
+
+  <!-- Section 1: System Stats -->
+  <g transform="translate(30, 85)">
+    <text class="stat-label" x="0" y="0" fill="#00ff41">// SERVER_STATUS</text>
+    <line x1="0" y1="8" x2="200" y2="8" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
+    
+    <text class="stat-label" x="0" y="25">▸ Status:</text>
+    <text class="stat-val" x="120" y="25" fill="#00ff41">RUNNING_SUCCESSFULLY</text>
+    <circle cx="110" cy="20" r="3" fill="#00ff41" class="live-dot"/>
+    
+    <text class="stat-label" x="0" y="45">▸ Response:</text>
+    <text class="stat-val" x="120" y="45">18ms <tspan fill="#ff0066" font-size="11">[ ULTRA_FAST ]</tspan></text>
+    
+    <text class="stat-label" x="0" y="65">▸ Requests:</text>
+    <text class="stat-val" x="120" y="65">45,218 <tspan class="live-dot" fill="#00ff41">✦</tspan></text>
+    
+    <text class="stat-label" x="450" y="25">▸ Coffee:</text>
+    <text class="stat-val" x="570" y="25" fill="#ff9900">1_Shot : 400_Lines</text>
+    
+    <text class="stat-label" x="450" y="45">▸ Bugs:</text>
+    <text class="stat-val" x="570" y="45" fill="#00ff41">0 [ PRODUCTION ]</text>
+    
+    <text class="stat-label" x="450" y="65">▸ Version:</text>
+    <text class="stat-val" x="570" y="65">WRENCH_OS v2.5</text>
+  </g>
+
+  <!-- Divider 1 -->
+  <line x1="30" y1="180" x2="970" y2="180" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
+
+  <!-- Section 2: API Traffic Graph -->
+  <g transform="translate(30, 200)">
+    <text class="stat-label" x="0" y="0" fill="#00ff41">// API_TRAFFIC_LOAD_ANALYSIS</text>
+    <line x1="0" y1="8" x2="340" y2="8" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
+    
+    <g transform="translate(50, 15)">
+      <svg width="880" height="70" viewBox="0 0 880 70" style="overflow:hidden;">
+        <!-- Wave 1 (Green Dynamic Flow) -->
+        <g class="moving-wave-1">
+          <path d="M0,50 Q40,15 80,45 T160,25 T240,55 T320,20 T400,45 T480,15 T560,50 T640,25 T720,40 T800,20 T880,45 Z" 
+                fill="#00ff41" fill-opacity="0.05"/>
+          <path d="M0,50 Q40,15 80,45 T160,25 T240,55 T320,20 T400,45 T480,15 T560,50 T640,25 T720,40 T800,20 T880,45" 
+                stroke="#00ff41" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        
+        <!-- Wave 2 (Pink Secondary Dash) -->
+        <g class="moving-wave-2">
+          <path d="M0,45 Q50,55 100,20 T200,60 T300,15 T400,50 T500,10 T600,45 T720,30 T820,60 T920,15 T1020,50" 
+                stroke="#ff0066" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.5"/>
+        </g>
+        
+        <!-- Graph Underlay Matrix Grid -->
+        <line x1="0" y1="35" x2="880" y2="35" stroke="#00ff41" stroke-width="0.5" opacity="0.15"/>
+        <line x1="220" y1="0" x2="220" y2="70" stroke="#00ff41" stroke-width="0.5" opacity="0.1"/>
+        <line x1="440" y1="0" x2="440" y2="70" stroke="#00ff41" stroke-width="0.5" opacity="0.1"/>
+        <line x1="660" y1="0" x2="660" y2="70" stroke="#00ff41" stroke-width="0.5" opacity="0.1"/>
+      </svg>
+    </g>
+    
+    <text class="stat-label" x="0" y="105" fill="#00ff41">Peak: 91.4% │ Avg: 64.2% │ Live Frequency Cluster Node Active</text>
+  </g>
+
+  <!-- Divider 2 -->
+  <line x1="30" y1="315" x2="970" y2="315" stroke="#ff0066" stroke-width="1" opacity="0.25"/>
+
+  <!-- Section 3: Activity Log -->
+  <g transform="translate(30, 335)">
+    <text class="stat-label" x="0" y="0" fill="#00ff41">// LATEST_ACTIVITY_LOG</text>
+    <line x1="0" y1="8" x2="280" y2="8" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
+    
+    <g transform="translate(60, 25)">
+      <text class="log-txt" x="0" y="0">» <tspan fill="#00ff41">Django_API:</tspan> Secure Token Encrypted &amp; Deployed.</text>
+      <text class="log-err" x="0" y="20">» <tspan fill="#ff0066">System_Check:</tspan> Zero Core Vulnerabilities Detected.</text>
+      <text class="log-guts" x="0" y="40">» <tspan fill="#ff9900">Berserk_Mode:</tspan> Struggle, endure, and break the limits.</text>
+      <text class="log-luffy" x="0" y="60">» <tspan fill="#ff3333">Gear_5:</tspan> Haki Code Injector active on Master Branch.</text>
+      <text class="log-txt" x="0" y="80">» <tspan fill="#00ff41">Wrench_Status:</tspan> DedSec Shell Script execution successful.</text>
+    </g>
+  </g>
+
+  <!-- Bottom Status Bar & Dynamic Custom Quote -->
+  <g transform="translate(30, 455)">
+    <line x1="0" y1="0" x2="940" y2="0" stroke="#00ff41" stroke-width="1.5" opacity="0.4"/>
+    
+    <text class="stat-label" x="0" y="22" fill="#00ff41">
+      CONNECTION: <tspan fill="#00ff41" class="live-dot">SECURE</tspan>
+    </text>
+    
+    <!-- Centralized Glow Quote (تم إزاحتها لليسار x=460 لتبان وتتزن بالكامل) -->
+    <text class="footer-text" x="460" y="22" text-anchor="middle" filter="url(#glow)">
+      "In this world, is the destiny of mankind controlled by some transcendental entity or law?"
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Floating Active Binary Streams -->
+  <g opacity="0.15">
+    <g class="df-left">
+      <text x="0" y="270" font-family="'Courier New', monospace" font-size="9" fill="#00ff41">
+        01101111_01110111_01100001
+      </text>
+    </g>
+    <g class="df-right">
+      <text x="800" y="230" font-family="'Courier New', monospace" font-size="9" fill="#ff0066">
+        01110000_01101001_01101100
+      </text>
+    </g>
+  </g>
+
+  <!-- Hexagon Continuous Loading Gear -->
+  <g transform="translate(950, 465)">
+    <path d="M 0,-12 L 10.4,-6 L 10.4,6 L 0,12 L -10.4,6 L -10.4,-6 Z" 
+          fill="none" stroke="#00ff41" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" 
+                       from="0" to="360" dur="5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

@@ -69,7 +69,7 @@
 <!-- START OF CYBERPUNK FOOTER -->
 <p align="center">
   <a href="https://github.com/omarwael78">
-    <img src="./footer.svg" alt="DedSec Footer" width="100%">
+    <img src="./footer2.svg" alt="DedSec Footer" width="100%">
   </a>
 </p>
 <!-- END OF CYBERPUNK FOOTER -->

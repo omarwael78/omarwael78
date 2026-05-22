@@ -1,4 +1,4 @@
-<svg width="100%" height="100%" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="100%" viewBox="0 0 1000 580" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- WD2 Background -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -75,16 +75,16 @@
 
       @keyframes glitchLine {
         0%, 95%, 100% { opacity: 0; transform: translateY(0); }
-        96% { opacity: 0.8; transform: translateY(100px) scaleY(2); }
-        98% { opacity: 0.4; transform: translateY(250px) scaleY(0.5); }
+        96% { opacity: 0.8; transform: translateY(80px) scaleY(2); }
+        98% { opacity: 0.4; transform: translateY(220px) scaleY(0.5); }
       }
       
       .term-title { 
         font-family: 'Courier New', monospace; 
-        font-size: 16px; 
+        font-size: 15px; 
         fill: #ffffff; 
         font-weight: bold;
-        letter-spacing: 2px;
+        letter-spacing: 0.5px;
       }
       
       .stat-label { 
@@ -119,10 +119,17 @@
         font-weight: bold; 
       }
       
-      .log-luffy { 
+      .log-overlord { 
         font-family: 'Courier New', monospace; 
         font-size: 12px; 
-        fill: #ff3333; 
+        fill: #ff0066; 
+        font-weight: bold; 
+      }
+      
+      .log-pristine { 
+        font-family: 'Courier New', monospace; 
+        font-size: 12px; 
+        fill: #00ff41; 
         font-weight: bold; 
       }
       
@@ -151,144 +158,142 @@
   </defs>
 
   <!-- Background Layer -->
-  <rect width="1000" height="500" fill="url(#bgGrad)" rx="8"/>
-  <rect width="1000" height="500" fill="url(#hexPattern)"/>
-  <rect width="1000" height="500" fill="url(#grid)" class="grid-bg"/>
-  <rect width="1000" height="500" fill="url(#scanlines)"/>
+  <rect width="1000" height="580" fill="url(#bgGrad)" rx="8"/>
+  <rect width="1000" height="580" fill="url(#hexPattern)"/>
+  <rect width="1000" height="580" fill="url(#grid)" class="grid-bg"/>
+  <rect width="1000" height="580" fill="url(#scanlines)"/>
   
   <!-- Animated Scanline Matrix -->
   <rect width="1000" height="2" fill="#00ff41" opacity="0.25">
-    <animate attributeName="y" values="-5;505;-5" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="-5;585;-5" dur="4s" repeatCount="indefinite"/>
   </rect>
 
   <!-- Hacking Ambient Glitch Lines -->
-  <rect class="glitch-bar" x="150" y="50" width="700" height="1" fill="#ff0066" opacity="0"/>
-  <rect class="glitch-bar" x="50" y="200" width="300" height="2" fill="#00ff41" opacity="0"/>
+  <rect class="glitch-bar" x="150" y="75" width="700" height="1" fill="#ff0066" opacity="0"/>
+  <rect class="glitch-bar" x="50" y="260" width="300" height="2" fill="#00ff41" opacity="0"/>
 
-  <!-- Corner Brackets - WD2 Style -->
+  <!-- Outer Corner Brackets -->
   <g opacity="0.85">
-    <line x1="30" y1="25" x2="100" y2="25" stroke="#00ff41" stroke-width="3"/>
-    <line x1="30" y1="25" x2="30" y2="95" stroke="#00ff41" stroke-width="3"/>
-    <line x1="970" y1="25" x2="900" y2="25" stroke="#00ff41" stroke-width="3"/>
-    <line x1="970" y1="25" x2="970" y2="95" stroke="#00ff41" stroke-width="3"/>
-    <line x1="30" y1="475" x2="100" y2="475" stroke="#00ff41" stroke-width="3"/>
-    <line x1="30" y1="475" x2="30" y2="405" stroke="#00ff41" stroke-width="3"/>
-    <line x1="970" y1="475" x2="900" y2="475" stroke="#00ff41" stroke-width="3"/>
-    <line x1="970" y1="475" x2="970" y2="405" stroke="#00ff41" stroke-width="3"/>
+    <line x1="25" y1="25" x2="100" y2="25" stroke="#00ff41" stroke-width="3"/>
+    <line x1="25" y1="25" x2="25" y2="100" stroke="#00ff41" stroke-width="3"/>
+    <line x1="975" y1="25" x2="900" y2="25" stroke="#00ff41" stroke-width="3"/>
+    <line x1="975" y1="25" x2="975" y2="100" stroke="#00ff41" stroke-width="3"/>
+    <line x1="25" y1="555" x2="100" y2="555" stroke="#00ff41" stroke-width="3"/>
+    <line x1="25" y1="555" x2="25" y2="480" stroke="#00ff41" stroke-width="3"/>
+    <line x1="975" y1="555" x2="900" y2="555" stroke="#00ff41" stroke-width="3"/>
+    <line x1="975" y1="555" x2="975" y2="480" stroke="#00ff41" stroke-width="3"/>
   </g>
 
   <!-- Decorative Top Fast Line -->
-  <line x1="50" y1="50" x2="950" y2="50" stroke="#00ff41" stroke-width="2" opacity="0.4">
+  <line x1="50" y1="75" x2="950" y2="75" stroke="#00ff41" stroke-width="2" opacity="0.4">
     <animate attributeName="stroke-dasharray" values="0,900; 900,0; 0,900" dur="4s" repeatCount="indefinite"/>
   </line>
 
   <!-- Header Section -->
-  <g transform="translate(30, 35)">
-    <!-- Left Pulsing Target Dot -->
+  <g transform="translate(40, 55)">
     <circle class="live-pulse" cx="10" cy="-4" r="5" fill="#00ff41" filter="url(#glow)"/>
-    
-    <!-- Glitch Text Backing -->
-    <text class="term-title glitch-shadow" x="30" y="0" fill="#ff0066" opacity="0.5">
-      SYSTEM LIVE MONITOR // DEDSEC_OPERATIVE
+    <text class="term-title glitch-shadow" x="30" y="0" fill="#ff0066" opacity="0.5" text-anchor="start">
+      SYSTEM LIVE MONITOR // SRGN_OF_DTH IS ON FIRE AS USUAL
     </text>
-    
-    <!-- Main Header -->
-    <text class="term-title" x="30" y="0" fill="#00ff41" filter="url(#glow)">
-      SYSTEM LIVE MONITOR // DEDSEC_OPERATIVE
+    <text class="term-title" x="30" y="0" fill="#00ff41" filter="url(#glow)" text-anchor="start">
+      SYSTEM LIVE MONITOR // SRGN_OF_DTH IS ON FIRE AS USUAL
     </text>
-
-    <!-- Right Pulsing Target Dot -->
-    <circle class="live-pulse" cx="445" cy="-4" r="5" fill="#00ff41" filter="url(#glow)"/>
+    <circle class="live-pulse" cx="560" cy="-4" r="5" fill="#00ff41" filter="url(#glow)"/>
   </g>
 
   <!-- Section 1: System Stats -->
-  <g transform="translate(30, 85)">
+  <g transform="translate(40, 110)">
     <text class="stat-label" x="0" y="0" fill="#00ff41">// SERVER_STATUS</text>
     <line x1="0" y1="8" x2="200" y2="8" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
     
-    <text class="stat-label" x="0" y="25">▸ Status:</text>
-    <text class="stat-val" x="120" y="25" fill="#00ff41">RUNNING_SUCCESSFULLY</text>
-    <circle cx="110" cy="20" r="3" fill="#00ff41" class="live-dot"/>
+    <!-- Column 1 -->
+    <text class="stat-label" x="0" y="30">▸ Status:</text>
+    <text class="stat-val" x="120" y="30" fill="#00ff41">RUNNING_SUCCESSFULLY</text>
+    <circle cx="110" cy="25" r="3" fill="#00ff41" class="live-dot"/>
     
-    <text class="stat-label" x="0" y="45">▸ Response:</text>
-    <text class="stat-val" x="120" y="45">18ms <tspan fill="#ff0066" font-size="11">[ ULTRA_FAST ]</tspan></text>
+    <text class="stat-label" x="0" y="55">▸ Response:</text>
+    <text class="stat-val" x="120" y="55">18ms <tspan fill="#ff0066" font-size="11">[ ERROR_404: WEAKNESS_NOT_FOUND ]</tspan></text>
     
-    <text class="stat-label" x="0" y="65">▸ Requests:</text>
-    <text class="stat-val" x="120" y="65">45,218 <tspan class="live-dot" fill="#00ff41">✦</tspan></text>
+    <text class="stat-label" x="0" y="80">▸ Requests:</text>
+    <text class="stat-val" x="120" y="80">45,218 <tspan class="live-dot" fill="#00ff41">✦</tspan></text>
     
-    <text class="stat-label" x="450" y="25">▸ Coffee:</text>
-    <text class="stat-val" x="570" y="25" fill="#ff9900">1_Shot : 400_Lines</text>
+    <!-- Column 2 -->
+    <text class="stat-label" x="480" y="30">▸ Coffee:</text>
+    <text class="stat-val" x="570" y="30" fill="#ff9900">1_Shot : 400_Lines</text>
     
-    <text class="stat-label" x="450" y="45">▸ Bugs:</text>
-    <text class="stat-val" x="570" y="45" fill="#00ff41">0 [ PRODUCTION ]</text>
-    
-    <text class="stat-label" x="450" y="65">▸ Version:</text>
-    <text class="stat-val" x="570" y="65">WRENCH_OS v2.5</text>
+    <text class="stat-label" x="480" y="55">▸ Version:</text>
+    <text class="stat-val" x="570" y="55">OMAR_WAEL_OS v2.0</text>
+
+    <!-- رجعنا الجملة القديمة الأصلية هنا -->
+    <text class="stat-label" x="480" y="80">▸ Bugs:</text>
+    <text class="stat-val" x="570" y="80" fill="#00ff41">0 <tspan fill="#ff0066" font-size="11" font-weight="normal"> [ KILLED POSTMAN ]</tspan></text>
   </g>
 
   <!-- Divider 1 -->
-  <line x1="30" y1="180" x2="970" y2="180" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
+  <line x1="40" y1="225" x2="960" y2="225" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
 
   <!-- Section 2: API Traffic Graph -->
-  <g transform="translate(30, 200)">
+  <g transform="translate(40, 245)">
     <text class="stat-label" x="0" y="0" fill="#00ff41">// API_TRAFFIC_LOAD_ANALYSIS</text>
     <line x1="0" y1="8" x2="340" y2="8" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
     
-    <g transform="translate(50, 15)">
-      <svg width="880" height="70" viewBox="0 0 880 70" style="overflow:hidden;">
-        <!-- Wave 1 (Green Dynamic Flow) -->
+    <g transform="translate(50, 18)">
+      <svg width="860" height="65" viewBox="0 0 860 65" style="overflow:hidden;">
+        <!-- Wave 1 -->
         <g class="moving-wave-1">
-          <path d="M0,50 Q40,15 80,45 T160,25 T240,55 T320,20 T400,45 T480,15 T560,50 T640,25 T720,40 T800,20 T880,45 Z" 
+          <path d="M0,45 Q40,12 80,40 T160,20 T240,50 T320,15 T400,40 T480,12 T560,45 T640,20 T720,35 T800,15 T880,40 Z" 
                 fill="#00ff41" fill-opacity="0.05"/>
-          <path d="M0,50 Q40,15 80,45 T160,25 T240,55 T320,20 T400,45 T480,15 T560,50 T640,25 T720,40 T800,20 T880,45" 
+          <path d="M0,45 Q40,12 80,40 T160,20 T240,50 T320,15 T400,40 T480,12 T560,45 T640,20 T720,35 T800,15 T880,40" 
                 stroke="#00ff41" stroke-width="2.5" stroke-linecap="round"/>
         </g>
         
-        <!-- Wave 2 (Pink Secondary Dash) -->
+        <!-- Wave 2 -->
         <g class="moving-wave-2">
-          <path d="M0,45 Q50,55 100,20 T200,60 T300,15 T400,50 T500,10 T600,45 T720,30 T820,60 T920,15 T1020,50" 
+          <path d="M0,40 Q50,50 100,15 T200,55 T300,10 T400,45 T500,8 T600,40 T720,25 T820,55 T920,10 T1020,45" 
                 stroke="#ff0066" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.5"/>
         </g>
         
-        <!-- Graph Underlay Matrix Grid -->
-        <line x1="0" y1="35" x2="880" y2="35" stroke="#00ff41" stroke-width="0.5" opacity="0.15"/>
-        <line x1="220" y1="0" x2="220" y2="70" stroke="#00ff41" stroke-width="0.5" opacity="0.1"/>
-        <line x1="440" y1="0" x2="440" y2="70" stroke="#00ff41" stroke-width="0.5" opacity="0.1"/>
-        <line x1="660" y1="0" x2="660" y2="70" stroke="#00ff41" stroke-width="0.5" opacity="0.1"/>
+        <!-- Grid Layers -->
+        <line x1="0" y1="32" x2="860" y2="32" stroke="#00ff41" stroke-width="0.5" opacity="0.15"/>
+        <line x1="215" y1="0" x2="215" y2="65" stroke="#00ff41" stroke-width="0.5" opacity="0.1"/>
+        <line x1="430" y1="0" x2="430" y2="65" stroke="#00ff41" stroke-width="0.5" opacity="0.1"/>
+        <line x1="645" y1="0" x2="645" y2="65" stroke="#00ff41" stroke-width="0.5" opacity="0.1"/>
       </svg>
     </g>
     
-    <text class="stat-label" x="0" y="105" fill="#00ff41">Peak: 91.4% │ Avg: 64.2% │ Live Frequency Cluster Node Active</text>
+    <text class="stat-label" x="0" y="100" fill="#00ff41">Peak: 91.4% │ Avg: 64.2% │ Live Frequency Cluster Node Active</text>
   </g>
 
   <!-- Divider 2 -->
-  <line x1="30" y1="315" x2="970" y2="315" stroke="#ff0066" stroke-width="1" opacity="0.25"/>
+  <line x1="40" y1="375" x2="960" y2="375" stroke="#ff0066" stroke-width="1" opacity="0.25"/>
 
   <!-- Section 3: Activity Log -->
-  <g transform="translate(30, 335)">
+  <g transform="translate(40, 395)">
     <text class="stat-label" x="0" y="0" fill="#00ff41">// LATEST_ACTIVITY_LOG</text>
     <line x1="0" y1="8" x2="280" y2="8" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
     
-    <g transform="translate(60, 25)">
+    <g transform="translate(40, 22)">
       <text class="log-txt" x="0" y="0">» <tspan fill="#00ff41">Django_API:</tspan> Secure Token Encrypted &amp; Deployed.</text>
-      <text class="log-err" x="0" y="20">» <tspan fill="#ff0066">System_Check:</tspan> Zero Core Vulnerabilities Detected.</text>
-      <text class="log-guts" x="0" y="40">» <tspan fill="#ff9900">Berserk_Mode:</tspan> Struggle, endure, and break the limits.</text>
-      <text class="log-luffy" x="0" y="60">» <tspan fill="#ff3333">Gear_5:</tspan> Haki Code Injector active on Master Branch.</text>
-      <text class="log-txt" x="0" y="80">» <tspan fill="#00ff41">Wrench_Status:</tspan> DedSec Shell Script execution successful.</text>
+      <text class="log-err" x="0" y="18">» <tspan fill="#ff0066">System_Check:</tspan> Zero Core Vulnerabilities Detected.</text>
+      
+      <!-- جملة جتس الجديدة من بيرسيرك هنا -->
+      <text class="log-guts" x="0" y="36">» <tspan fill="#ff9900">Struggler_Core:</tspan> Struggle, endure, and contend against the system destiny.</text>
+      
+      <text class="log-overlord" x="0" y="54">» <tspan fill="#ff0066">Stack_Overlord:</tspan> Pushing logic so clean, the compiler didn't even dare to warn.</text>
+      <text class="log-pristine" x="0" y="72">» <tspan fill="#00ff41">No_StackOverflow:</tspan> Writing logic so pristine, Google is learning from my commits.</text>
     </g>
   </g>
 
-  <!-- Bottom Status Bar & Dynamic Custom Quote -->
-  <g transform="translate(30, 455)">
-    <line x1="0" y1="0" x2="940" y2="0" stroke="#00ff41" stroke-width="1.5" opacity="0.4"/>
+  <!-- Bottom Status Bar -->
+  <g transform="translate(40, 525)">
+    <line x1="0" y1="0" x2="920" y2="0" stroke="#00ff41" stroke-width="1.5" opacity="0.4"/>
     
     <text class="stat-label" x="0" y="22" fill="#00ff41">
       CONNECTION: <tspan fill="#00ff41" class="live-dot">SECURE</tspan>
     </text>
     
-    <!-- Centralized Glow Quote (تم إزاحتها لليسار x=460 لتبان وتتزن بالكامل) -->
     <text class="footer-text" x="460" y="22" text-anchor="middle" filter="url(#glow)">
-      "In this world, is the destiny of mankind controlled by some transcendental entity or law?"
+      " THE MOST ANGELIC DEVELOPER ^_^ , AND THE MOST DEVILISH H@CKER ALSO X_X "
       <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
     </text>
   </g>
@@ -296,23 +301,23 @@
   <!-- Floating Active Binary Streams -->
   <g opacity="0.15">
     <g class="df-left">
-      <text x="0" y="270" font-family="'Courier New', monospace" font-size="9" fill="#00ff41">
+      <text x="0" y="290" font-family="'Courier New', monospace" font-size="9" fill="#00ff41">
         01101111_01110111_01100001
       </text>
     </g>
     <g class="df-right">
-      <text x="800" y="230" font-family="'Courier New', monospace" font-size="9" fill="#ff0066">
+      <text x="800" y="255" font-family="'Courier New', monospace" font-size="9" fill="#ff0066">
         01110000_01101001_01101100
       </text>
     </g>
   </g>
 
   <!-- Hexagon Continuous Loading Gear -->
-  <g transform="translate(950, 465)">
+  <g transform="translate(945, 545)">
     <path d="M 0,-12 L 10.4,-6 L 10.4,6 L 0,12 L -10.4,6 L -10.4,-6 Z" 
           fill="none" stroke="#00ff41" stroke-width="1.5">
       <animateTransform attributeName="transform" type="rotate" 
-                       from="0" to="360" dur="5s" repeatCount="indefinite"/>
+                        from="0" to="360" dur="5s" repeatCount="indefinite"/>
     </path>
   </g>
 </svg>

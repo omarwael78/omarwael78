@@ -47,9 +47,9 @@
       
       .wd2-subtitle {
         font-family: 'Courier New', monospace;
-        font-size: 16px;
+        font-size: 15px;
         fill: #00ff41;
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
       }
       
       .status-text {
@@ -164,14 +164,14 @@
   </g>
   
   <!-- Header Section -->
-  <g transform="translate(500, 80)">
+  <g transform="translate(500, 75)">
     <!-- Wrench Icon -->
     <g transform="translate(-450, -40)">
       <path d="M 20,10 L 35,25 L 25,35 L 10,20 L 5,25 L 0,20 L 5,15 L 10,20 Z M 35,25 L 50,40 L 45,45 L 30,30 Z" 
             fill="#00ff41" filter="url(#glow)" opacity="0.9">
         <animateTransform attributeName="transform" type="rotate" 
-                         values="0 25 25; 10 25 25; 0 25 25" 
-                         dur="2s" repeatCount="indefinite"/>
+                          values="0 25 25; 10 25 25; 0 25 25" 
+                          dur="2s" repeatCount="indefinite"/>
       </path>
     </g>
     
@@ -185,82 +185,84 @@
       OMAR_WAEL // SRGN_OF_DTH
     </text>
     
+    <!-- Subtitle Split into two lines to fit perfectly -->
     <text class="wd2-subtitle" x="0" y="25" text-anchor="middle" opacity="0.8">
-      [ DEDSEC_OPERATIVE // FULL_STACK_HACKER ]
+      <tspan x="0" dy="5">[ WITH OMAR_WAEL DON'T CARE ABOUT BUGS, ERRORS, AND HACKERS ]</tspan>
+      <tspan x="0" dy="22">[ JUST CARE ABOUT THE PAYMENT METHOD ]</tspan>
     </text>
   </g>
   
-  <!-- Diagonal Separator Line -->
-  <line x1="100" y1="130" x2="900" y2="130" stroke="#00ff41" stroke-width="2" opacity="0.5"/>
-  <line x1="100" y1="132" x2="900" y2="132" stroke="#00ff41" stroke-width="1" opacity="0.2">
+  <!-- Diagonal Separator Line (Shifted down slightly for spacing) -->
+  <line x1="100" y1="145" x2="900" y2="145" stroke="#00ff41" stroke-width="2" opacity="0.5"/>
+  <line x1="100" y1="147" x2="900" y2="147" stroke="#00ff41" stroke-width="1" opacity="0.2">
     <animate attributeName="stroke-dasharray" values="0 900; 900 0" dur="3s" repeatCount="indefinite"/>
   </line>
   
   <!-- Main Panel Container -->
-  <g transform="translate(80, 160)">
+  <g transform="translate(80, 175)">
     <!-- Left Panel: System Info -->
-    <rect width="400" height="380" fill="#000000" fill-opacity="0.7" 
+    <rect width="400" height="365" fill="#000000" fill-opacity="0.7" 
           stroke="#00ff41" stroke-width="2" rx="4"/>
     
     <!-- Animated Corner Details -->
     <circle cx="10" cy="10" r="3" fill="#00ff41" opacity="0.8"/>
     <circle cx="390" cy="10" r="3" fill="#00ff41" opacity="0.8"/>
-    <circle cx="10" cy="370" r="3" fill="#00ff41" opacity="0.8"/>
-    <circle cx="390" cy="370" r="3" fill="#00ff41" opacity="0.8"/>
+    <circle cx="10" cy="355" r="3" fill="#00ff41" opacity="0.8"/>
+    <circle cx="390" cy="355" r="3" fill="#00ff41" opacity="0.8"/>
     
-    <g transform="translate(20, 30)">
+    <g transform="translate(20, 25)">
       <text class="status-text" x="0" y="0" fill="#00ff41">// OPERATIVE_STATUS</text>
       <line x1="0" y1="8" x2="150" y2="8" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
       
-      <text class="info-label" x="0" y="35">▸ CODENAME:</text>
-      <text class="info-value" x="150" y="35">OMAR_WAEL</text>
+      <text class="info-label" x="0" y="32">▸ CODENAME:</text>
+      <text class="info-value" x="150" y="32">OMAR_WAEL</text>
       
-      <text class="info-label" x="0" y="60">▸ ROLE:</text>
-      <text class="info-value" x="150" y="60">FULL_STACK_DEV</text>
+      <text class="info-label" x="0" y="55">▸ ROLE:</text>
+      <text class="info-value" x="150" y="55">FULL_STACK_DEV</text>
       
-      <text class="info-label" x="0" y="85">▸ LOCATION:</text>
-      <text class="info-value" x="150" y="85">CYBER_SPACE</text>
+      <text class="info-label" x="0" y="78">▸ LOCATION:</text>
+      <text class="info-value" x="150" y="78">CYBER_SPACE</text>
       
-      <text class="info-label" x="0" y="110">▸ STATUS:</text>
-      <text class="info-value" x="150" y="110" fill="#00ff41">
+      <text class="info-label" x="0" y="101">▸ STATUS:</text>
+      <text class="info-value" x="150" y="101" fill="#00ff41">
         ONLINE
         <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
       </text>
       
-      <line x1="0" y1="130" x2="360" y2="130" stroke="#00ff41" stroke-width="1" opacity="0.2"/>
+      <line x1="0" y1="118" x2="360" y2="118" stroke="#00ff41" stroke-width="1" opacity="0.2"/>
       
-      <text class="status-text" x="0" y="160" fill="#00ff41">// SKILL_SET</text>
-      <line x1="0" y1="168" x2="120" y2="168" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
+      <text class="status-text" x="0" y="145" fill="#00ff41">// SKILL_SET</text>
+      <line x1="0" y1="153" x2="120" y2="153" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
       
-      <text class="hack-text" x="0" y="190">→ Python: Django | FastAPI | Flask</text>
-      <text class="hack-text" x="0" y="210">→ Frontend: React | JavaScript | jQuery</text>
-      <text class="hack-text" x="0" y="230">→ DevOps: Docker | Kubernetes | Linux</text>
-      <text class="hack-text" x="0" y="250">→ AI: LangChain | CrewAI | n8n</text>
-      <text class="hack-text" x="0" y="270">→ Database: PostgreSQL | MySQL | Redis</text>
+      <text class="hack-text" x="0" y="173">→ Python: Django | FastAPI | Flask</text>
+      <text class="hack-text" x="0" y="191">→ Frontend: React | JavaScript | jQuery</text>
+      <text class="hack-text" x="0" y="209">→ DevOps: Docker | Kubernetes | Linux</text>
+      <text class="hack-text" x="0" y="227">→ AI: LangChain | CrewAI | n8n</text>
+      <text class="hack-text" x="0" y="245">→ Database: PostgreSQL | MySQL | Redis</text>
       
-      <line x1="0" y1="290" x2="360" y2="290" stroke="#00ff41" stroke-width="1" opacity="0.2"/>
+      <line x1="0" y1="265" x2="360" y2="265" stroke="#00ff41" stroke-width="1" opacity="0.2"/>
       
-      <text class="status-text" x="0" y="320" fill="#ff0066">// WARNING</text>
-      <text class="alert-text" x="0" y="345">⚠ Do not disturb during coffee hours</text>
+      <text class="status-text" x="0" y="295" fill="#ff0066">// WARNING</text>
+      <text class="alert-text" x="0" y="320">⚠ Do not disturb during coffee hours</text>
     </g>
   </g>
   
   <!-- Right Panel: Active Processes -->
-  <g transform="translate(520, 160)">
-    <rect width="400" height="380" fill="#000000" fill-opacity="0.7" 
+  <g transform="translate(520, 175)">
+    <rect width="400" height="365" fill="#000000" fill-opacity="0.7" 
           stroke="#00ff41" stroke-width="2" rx="4"/>
     
     <circle cx="10" cy="10" r="3" fill="#00ff41" opacity="0.8"/>
     <circle cx="390" cy="10" r="3" fill="#00ff41" opacity="0.8"/>
-    <circle cx="10" cy="370" r="3" fill="#00ff41" opacity="0.8"/>
-    <circle cx="390" cy="370" r="3" fill="#00ff41" opacity="0.8"/>
+    <circle cx="10" cy="355" r="3" fill="#00ff41" opacity="0.8"/>
+    <circle cx="390" cy="355" r="3" fill="#00ff41" opacity="0.8"/>
     
-    <g transform="translate(20, 30)">
+    <g transform="translate(20, 25)">
       <text class="status-text" x="0" y="0" fill="#00ff41">// ACTIVE_PROCESSES</text>
       <line x1="0" y1="8" x2="180" y2="8" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
       
       <!-- Process 1 -->
-      <g transform="translate(0, 35)">
+      <g transform="translate(0, 32)">
         <rect width="8" height="8" fill="#00ff41">
           <animate attributeName="opacity" values="0.3;1;0.3" dur="1s" repeatCount="indefinite"/>
         </rect>
@@ -272,7 +274,7 @@
       </g>
       
       <!-- Process 2 -->
-      <g transform="translate(0, 65)">
+      <g transform="translate(0, 60)">
         <rect width="8" height="8" fill="#00ff41">
           <animate attributeName="opacity" values="0.3;1;0.3" dur="1.3s" repeatCount="indefinite"/>
         </rect>
@@ -284,7 +286,7 @@
       </g>
       
       <!-- Process 3 -->
-      <g transform="translate(0, 95)">
+      <g transform="translate(0, 88)">
         <rect width="8" height="8" fill="#00ff41">
           <animate attributeName="opacity" values="0.3;1;0.3" dur="1.7s" repeatCount="indefinite"/>
         </rect>
@@ -296,7 +298,7 @@
       </g>
       
       <!-- Process 4 -->
-      <g transform="translate(0, 125)">
+      <g transform="translate(0, 116)">
         <rect width="8" height="8" fill="#ff0066">
           <animate attributeName="opacity" values="0.3;1;0.3" dur="0.8s" repeatCount="indefinite"/>
         </rect>
@@ -305,42 +307,42 @@
         <rect x="200" y="0" width="30" height="10" fill="#ff0066" opacity="0.7"/>
       </g>
       
-      <line x1="0" y1="155" x2="360" y2="155" stroke="#00ff41" stroke-width="1" opacity="0.2"/>
+      <line x1="0" y1="145" x2="360" y2="145" stroke="#00ff41" stroke-width="1" opacity="0.2"/>
       
-      <text class="status-text" x="0" y="185" fill="#00ff41">// DATA_STREAM</text>
-      <line x1="0" y1="193" x2="130" y2="193" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
+      <text class="status-text" x="0" y="175" fill="#00ff41">// DATA_STREAM</text>
+      <line x1="0" y1="183" x2="130" y2="183" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
       
       <!-- Data Flow Animation -->
       <g>
-        <text class="hack-text" x="0" y="220" opacity="0">
+        <text class="hack-text" x="0" y="210" opacity="0">
           &gt;&gt; Encrypting payload...
           <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
           <animate attributeName="x" values="0;300" dur="3s" repeatCount="indefinite"/>
         </text>
         
-        <text class="hack-text" x="0" y="245" opacity="0">
+        <text class="hack-text" x="0" y="235" opacity="0">
           &gt;&gt; Deploying to production...
           <animate attributeName="opacity" values="0;1;0" dur="3s" begin="1s" repeatCount="indefinite"/>
           <animate attributeName="x" values="0;300" dur="3s" begin="1s" repeatCount="indefinite"/>
         </text>
         
-        <text class="hack-text" x="0" y="270" opacity="0">
+        <text class="hack-text" x="0" y="260" opacity="0">
           &gt;&gt; Hacking the mainframe...
           <animate attributeName="opacity" values="0;1;0" dur="3s" begin="2s" repeatCount="indefinite"/>
           <animate attributeName="x" values="0;300" dur="3s" begin="2s" repeatCount="indefinite"/>
         </text>
       </g>
       
-      <line x1="0" y1="295" x2="360" y2="295" stroke="#00ff41" stroke-width="1" opacity="0.2"/>
+      <line x1="0" y1="285" x2="360" y2="285" stroke="#00ff41" stroke-width="1" opacity="0.2"/>
       
       <!-- Hexagon Loader -->
-      <g transform="translate(180, 330)">
-        <path d="M 0,-20 L 17,-10 L 17,10 L 0,20 L -17,10 L -17,-10 Z" 
+      <g transform="translate(180, 318)">
+        <path d="M 0,-15 L 13,-8 L 13,8 L 0,15 L -13,8 L -13,-8 Z" 
               fill="none" stroke="#00ff41" stroke-width="2" opacity="0.8">
           <animateTransform attributeName="transform" type="rotate" 
-                           from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
+                            from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
         </path>
-        <circle cx="0" cy="0" r="5" fill="#00ff41">
+        <circle cx="0" cy="0" r="4" fill="#00ff41">
           <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
         </circle>
       </g>

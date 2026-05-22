@@ -207,7 +207,7 @@
       <line x1="0" y1="8" x2="150" y2="8" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
       
       <text class="info-label" x="0" y="32">▸ CODENAME:</text>
-      <text class="info-value" x="150" y="32">OMAR_WAEL</text>
+      <text class="info-value" x="150" y="32">OMAR_WAEL//SRGN_OF_DTH</text>
       
       <text class="info-label" x="0" y="55">▸ ROLE:</text>
       <text class="info-value" x="150" y="55">FULL_STACK_DEV</text>

@@ -116,19 +116,12 @@
   
   <!-- Corner Brackets - WD2 Style -->
   <g opacity="0.8">
-    <!-- Top Left -->
     <line x1="40" y1="30" x2="110" y2="30" stroke="#00ff41" stroke-width="3"/>
     <line x1="40" y1="30" x2="40" y2="100" stroke="#00ff41" stroke-width="3"/>
-    
-    <!-- Top Right -->
     <line x1="860" y1="30" x2="790" y2="30" stroke="#00ff41" stroke-width="3"/>
     <line x1="860" y1="30" x2="860" y2="100" stroke="#00ff41" stroke-width="3"/>
-    
-    <!-- Bottom Left -->
     <line x1="40" y1="420" x2="110" y2="420" stroke="#00ff41" stroke-width="3"/>
     <line x1="40" y1="420" x2="40" y2="350" stroke="#00ff41" stroke-width="3"/>
-    
-    <!-- Bottom Right -->
     <line x1="860" y1="420" x2="790" y2="420" stroke="#00ff41" stroke-width="3"/>
     <line x1="860" y1="420" x2="860" y2="350" stroke="#00ff41" stroke-width="3"/>
   </g>
@@ -138,53 +131,41 @@
   <line class="line" x1="60" y1="205" x2="840" y2="205" stroke="#ff0066" stroke-width="1" opacity="0.3" style="animation-delay: 0.3s"/>
   <line class="line" x1="60" y1="370" x2="840" y2="370" stroke="#00ff41" stroke-width="1" opacity="0.3" style="animation-delay: 0.6s"/>
   
-  <!-- Glitch shadow effect -->
-  <text class="title glitch-shadow" x="450" y="85" text-anchor="middle" fill="#ff0066" opacity="0.5">
-    OMAR WAEL
-  </text>
-  
-  <!-- Main title with glow -->
-  <text class="title" x="450" y="85" text-anchor="middle" filter="url(#glow)">
-    OMAR WAEL
-  </text>
+  <!-- Titles -->
+  <text class="title glitch-shadow" x="450" y="85" text-anchor="middle" fill="#ff0066" opacity="0.5">OMAR WAEL</text>
+  <text class="title" x="450" y="85" text-anchor="middle" filter="url(#glow)">OMAR WAEL</text>
 
-  <!-- Status Indicator Dot - الآن في الجانب الأيسر قبل الاسم متناسقة تماماً -->
+  <!-- Status Indicator Dot -->
   <circle cx="290" cy="70" r="7" fill="#00ff41" filter="url(#glow)" class="pulse-dot"/>
   
   <!-- Subtitle -->
   <text class="subtitle fade-in" x="450" y="115" text-anchor="middle" style="animation-delay: 0.5s">
-    [ DEDSEC OPERATIVE // FULL-STACK HACKER // CAFFEINE-POWERED ]
+    [ BACK-END STRUGGLER // FULL-STACK HACKER // CAFFEINE-POWERED ]
   </text>
   
   <!-- Terminal window with WD2 styling -->
   <g>
-    <rect x="60" y="155" width="780" height="200" fill="#000000" stroke="#00ff41" stroke-width="2" rx="4" opacity="0.85"/>
+    <rect x="60" y="155" width="780" height="215" fill="#000000" stroke="#00ff41" stroke-width="2" rx="4" opacity="0.85"/>
     
-    <!-- Terminal corner indicators -->
     <circle cx="70" cy="165" r="3" fill="#00ff41" opacity="0.8"/>
     <circle cx="830" cy="165" r="3" fill="#00ff41" opacity="0.8"/>
-    <circle cx="70" cy="345" r="3" fill="#00ff41" opacity="0.8"/>
-    <circle cx="830" cy="345" r="3" fill="#00ff41" opacity="0.8"/>
+    <circle cx="70" cy="360" r="3" fill="#00ff41" opacity="0.8"/>
+    <circle cx="830" cy="360" r="3" fill="#00ff41" opacity="0.8"/>
     
-    <!-- Terminal dots -->
-    <circle cx="85" cy="180" r="4" fill="#00ff41">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="105" cy="180" r="4" fill="#00ff41">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="0.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="125" cy="180" r="4" fill="#00ff41">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="1s" repeatCount="indefinite"/>
-    </circle>
+    <circle cx="85" cy="180" r="4" fill="#00ff41"><animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="105" cy="180" r="4" fill="#00ff41"><animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="0.5s" repeatCount="indefinite"/></circle>
+    <circle cx="125" cy="180" r="4" fill="#00ff41"><animate attributeName="opacity" values="0.5;1;0.5" dur="2s" begin="1s" repeatCount="indefinite"/></circle>
     
-    <!-- Terminal content -->
+    <!-- السطر الأول -->
     <text class="terminal-text fade-in" x="85" y="215" style="animation-delay: 0.8s">
-      Omar_Wael<>SRGN_OF_DTH:~$
+      Omar_Wael 𒉭 g4m3_0v3r_SRGN:~$
     </text>
-    <text class="terminal-text fade-in" x="230" y="215" fill="#ff0066" style="animation-delay: 1s">
+    <!-- تم ترحيل الكوماند لـ x="335" عشان يبدأ بعد الـ $ مباشرة -->
+    <text class="terminal-text fade-in" x="335" y="215" fill="#ff0066" style="animation-delay: 1s">
       ./display_skills.sh
     </text>
     
+    <!-- Skills Output -->
     <text class="output-text fade-in" x="105" y="245" style="animation-delay: 1.2s">
       ▸ Crafting robust backend logic with Python (Django / Flask / FastAPI)
     </text>
@@ -198,48 +179,49 @@
       ▸ Automation via Bash scripting &amp; Linux environment optimization
     </text>
     
-    <!-- Blinking cursor -->
-    <text class="terminal-text fade-in" x="85" y="345" style="animation-delay: 2s">
-      Omar_Wael<>SRGN_OF_DTH:~$
+    <!-- السطر الأخير -->
+    <text class="terminal-text fade-in" x="85" y="350" style="animation-delay: 2s">
+      Omar_Wael 𒉭 g4m3_0v3r_SRGN:~$
     </text>
-    <rect class="blink" x="230" y="330" width="12" height="20" fill="#00ff41" style="animation-delay: 2.2s"/>
+    <!-- تم ضبط إحداثيات الكيرسر لـ x="335" عشان ييجى بعد الـ $ بالظبط وميغطيش عليها -->
+    <rect class="blink" x="335" y="336" width="12" height="18" fill="#00ff41" style="animation-delay: 2.2s"/>
   </g>
   
   <!-- Tech tags with WD2 style -->
   <g class="fade-in" style="animation-delay: 2.2s">
-    <rect x="75" y="385" width="95" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
-    <rect x="77" y="387" width="5" height="24" fill="#00ff41" opacity="0.6"/>
-    <text class="tag-text" x="122" y="405" text-anchor="middle">PYTHON</text>
+    <rect x="75" y="390" width="95" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
+    <rect x="77" y="392" width="5" height="24" fill="#00ff41" opacity="0.6"/>
+    <text class="tag-text" x="122" y="410" text-anchor="middle">PYTHON</text>
   </g>
   
   <g class="fade-in" style="animation-delay: 2.3s">
-    <rect x="185" y="385" width="95" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
-    <rect x="187" y="387" width="5" height="24" fill="#00ff41" opacity="0.6"/>
-    <text class="tag-text" x="232" y="405" text-anchor="middle">DJANGO</text>
+    <rect x="185" y="390" width="95" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
+    <rect x="187" y="392" width="5" height="24" fill="#00ff41" opacity="0.6"/>
+    <text class="tag-text" x="232" y="410" text-anchor="middle">DJANGO</text>
   </g>
   
   <g class="fade-in" style="animation-delay: 2.4s">
-    <rect x="295" y="385" width="95" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
-    <rect x="297" y="387" width="5" height="24" fill="#00ff41" opacity="0.6"/>
-    <text class="tag-text" x="342" y="405" text-anchor="middle">REACT</text>
+    <rect x="295" y="390" width="95" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
+    <rect x="297" y="392" width="5" height="24" fill="#00ff41" opacity="0.6"/>
+    <text class="tag-text" x="342" y="410" text-anchor="middle">REACT</text>
   </g>
   
   <g class="fade-in" style="animation-delay: 2.5s">
-    <rect x="405" y="385" width="95" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
-    <rect x="407" y="387" width="5" height="24" fill="#00ff41" opacity="0.6"/>
-    <text class="tag-text" x="452" y="405" text-anchor="middle">DOCKER</text>
+    <rect x="405" y="390" width="95" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
+    <rect x="407" y="392" width="5" height="24" fill="#00ff41" opacity="0.6"/>
+    <text class="tag-text" x="452" y="410" text-anchor="middle">DOCKER</text>
   </g>
   
   <g class="fade-in" style="animation-delay: 2.6s">
-    <rect x="515" y="385" width="125" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
-    <rect x="517" y="387" width="5" height="24" fill="#00ff41" opacity="0.6"/>
-    <text class="tag-text" x="577" y="405" text-anchor="middle">KUBERNETES</text>
+    <rect x="515" y="390" width="125" height="28" rx="3" fill="none" stroke="#00ff41" stroke-width="2"/>
+    <rect x="517" y="392" width="5" height="24" fill="#00ff41" opacity="0.6"/>
+    <text class="tag-text" x="577" y="410" text-anchor="middle">KUBERNETES</text>
   </g>
   
   <g class="fade-in" style="animation-delay: 2.7s">
-    <rect x="655" y="385" width="170" height="28" rx="3" fill="none" stroke="#ff0066" stroke-width="2"/>
-    <rect x="657" y="387" width="5" height="24" fill="#ff0066" opacity="0.8"/>
-    <text class="tag-text" x="740" y="405" text-anchor="middle" fill="#ff0066">STRUGGLER MODE</text>
+    <rect x="655" y="390" width="170" height="28" rx="3" fill="none" stroke="#ff0066" stroke-width="2"/>
+    <rect x="657" y="392" width="5" height="24" fill="#ff0066" opacity="0.8"/>
+    <text class="tag-text" x="740" y="410" text-anchor="middle" fill="#ff0066">STRUGGLER MODE</text>
   </g>
   
   <!-- Binary floating elements -->

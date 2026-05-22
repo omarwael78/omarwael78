@@ -179,20 +179,20 @@
     
     <!-- Terminal content -->
     <text class="terminal-text fade-in" x="85" y="215" style="animation-delay: 0.8s">
-      wrench@dedsec:~$
+      Omar_Wael<>SRGN_OF_DTH:~$
     </text>
     <text class="terminal-text fade-in" x="230" y="215" fill="#ff0066" style="animation-delay: 1s">
       ./display_skills.sh
     </text>
     
     <text class="output-text fade-in" x="105" y="245" style="animation-delay: 1.2s">
-      ▸ Crafting robust backend logic with Python (Django / FastAPI)
+      ▸ Crafting robust backend logic with Python (Django / Flask / FastAPI)
     </text>
     <text class="output-text fade-in" x="105" y="270" style="animation-delay: 1.4s">
       ▸ Building modern, dynamic frontends with React
     </text>
     <text class="output-text fade-in" x="105" y="295" style="animation-delay: 1.6s">
-      ▸ Orchestrating AI Automation Agents using n8n, Zapier &amp; Python
+      ▸ Orchestrating AI Automation Agents using n8n, Openclaw &amp; Python
     </text>
     <text class="output-text fade-in" x="105" y="320" style="animation-delay: 1.8s">
       ▸ Automation via Bash scripting &amp; Linux environment optimization
@@ -200,7 +200,7 @@
     
     <!-- Blinking cursor -->
     <text class="terminal-text fade-in" x="85" y="345" style="animation-delay: 2s">
-      wrench@dedsec:~$
+      Omar_Wael<>SRGN_OF_DTH:~$
     </text>
     <rect class="blink" x="230" y="330" width="12" height="20" fill="#00ff41" style="animation-delay: 2.2s"/>
   </g>

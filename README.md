@@ -53,6 +53,13 @@
 
 ###
 
+
+<p align="center">
+  <img src="./tech-stack-radaar2.svg" alt="Omar Wael Tech Stack" width="100%">
+</p>
+
+###
+
 <div align="center">
   <img src="./live-monitor2.svg" width="100%" alt="System Live Monitor Dashboard" />
 </div>
@@ -60,11 +67,6 @@
 
 ###
 
-<p align="center">
-  <img src="./tech-stack-radaar2.svg" alt="Omar Wael Tech Stack" width="100%">
-</p>
-
-###
 
 <!-- START OF CYBERPUNK FOOTER -->
 <p align="center">

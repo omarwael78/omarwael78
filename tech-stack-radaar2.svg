@@ -215,7 +215,7 @@
     <text class="section-title pink-glow" x="55" y="40">🎨 // FRONTEND_TOOLS</text>
     <line x1="55" y1="45" x2="210" y2="45" stroke="#ff0066" stroke-width="1" opacity="0.3"/>
     
-    <text class="tool-text" x="35" y="75">→ React 18</text>
+    <text class="tool-text" x="35" y="75">→ React 19</text>
     <text class="desc-text" x="55" y="93">Component-based UIs, state management</text>
     
     <text class="tool-text" x="35" y="120">→ Bootstrap + Tailwind CSS</text>
